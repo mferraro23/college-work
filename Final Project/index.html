@@ -64,7 +64,7 @@
 					</p>
 				</td>
 				<td>				
-					<img width="650px" height="550px" src="./images/gaming_pc.png" alt="gaming_pc">
+					<img class="gaming" src="./images/gaming_pc.png" alt="gaming_pc">
 				</td>
 			</tr>
 			<tr>
@@ -189,13 +189,13 @@
 		<div class="move_side">
 			<div class="container_3">
 				<div style="text-align: center;">
-					<img src="./images/cores.jpg" width="375px" height="270px" alt="cores">
+					<img src="./images/cores.jpg" class="cores" alt="cores">
 				</div>
 			</div>
 			<p></p>
 			<div class="container_3">
 				<div style="text-align: center;">
-					<img src="./images/cpu_back.jpg" width="350px" height="240px" alt="cpu_back">
+					<img src="./images/cpu_back.jpg" class="cpu" alt="cpu_back">
 				</div>
 			</div>
 		</div>
@@ -223,7 +223,7 @@
 				</td>
 				<td>			
 					<div style="text-align: center;">	
-						<img width="500" height="650" src="./images/info.png" alt="info">
+						<img class="info" src="./images/info.png" alt="info">
 					</div>	
 				</td>
 			</tr>
@@ -280,7 +280,7 @@
 			<p></p>
 			<div class="container_3">
 				<div style="text-align: center;">
-					<img src="./images/amd_1.png" width="350px" height="385px" alt="amd_1">
+					<img src="./images/amd_1.png" class="amd_1" alt="amd_1">
 				</div>
 			</div>
 		</div>
@@ -317,12 +317,12 @@
 		}
 		function buy(){
 			const price = parseFloat(document.querySelector('#chip').value);
-			let amnt_have = parseFloat(document.querySelector('#amount').value);
+			let amount_have = parseFloat(document.querySelector('#amount').value);
 			const pay = parseFloat(document.querySelector('#pay').value);
 			let weekCount = 0;
-			if (price>amnt_have){
-				while(price>amnt_have){
-					amnt_have += pay;
+			if (price>amount_have){
+				while(price>amount_have){
+					amount_have += pay;
 					weekCount += 1;
 				}
 			}

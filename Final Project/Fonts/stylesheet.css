@@ -1,0 +1,193 @@
+html{
+     scroll-behavior: smooth;
+}
+body{
+     background-color: #231B40;
+     height: auto;
+}
+h2{
+     text-align: center;
+     color: #3c67dc;
+     font-size: 25pt;
+}
+h3{
+     text-align: center;
+     color: #3c67dc;
+     font-size: 22pt;
+}
+h4{
+     text-align: center;
+     color: #3c67dc;
+     font-size: 22pt;
+}
+hr{
+     height: 5px;
+     background-color: #F8971D;
+     border: none;
+}
+button{
+     background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+     border: 0;
+     border-radius: 12px;
+     color: #FFFFFF;
+     cursor: pointer;
+     display: inline-block;
+     font-family: 'PT Sans Regular',sans-serif;
+     font-size: 16px;
+     font-weight: 500;
+     line-height: 2.5;
+     outline: transparent;
+     padding: 0 1rem;
+     text-align: center;
+     text-decoration: none;
+     transition: box-shadow .2s ease-in-out;
+     user-select: none;
+     -webkit-user-select: none;
+     touch-action: manipulation;
+     white-space: nowrap;
+}
+
+button:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+button:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+label{
+     background-color: #231B40;
+     font-family: 'PT Sans Regular', sans-serif;
+     color: #BCB4D9;
+}
+.pics{
+     float: left;
+     width: 6%;
+     height: 70%;
+     padding-top: 10px;
+     padding-left: 10px;
+     padding-right: 25px;
+}
+.pics2{
+     float: right;
+     width: 6%;
+     height: 70%;
+     padding-top: 10px;
+     padding-left: 10px;
+     padding-right: 25px;
+}
+.mid_pics{
+     width: 300px;
+     height: 300px;
+     
+}
+.movePic{
+     text-align: right;
+}
+.statpics{
+     width: 500px;
+     height: 725px;
+}
+.container{
+     background-color: #151426;
+     font-family: 'PT Sans Regular', sans-serif;
+     padding-left: 65px;
+     padding-right: 65px;
+     color: #BCB4D9;
+     font-size: 18pt;
+     border-radius: 10px;
+}
+.container_0{
+     margin-left: auto;
+     margin-right: auto;
+     background-color: #151426;
+     font-family: 'PT Sans Regular', sans-serif;
+     padding-left: 65px;
+     padding-right: 65px;
+     color: #BCB4D9;
+     font-size: 18pt;
+     border-radius: 10px;
+     width: 1000px;
+}
+.container_1{
+     display: flex;
+     font-family: 'PT Sans Regular', sans-serif;
+     color: #BCB4D9;
+     font-size: 18pt;
+     border-radius: 10px;
+     padding: 20px;
+     height: auto;
+}
+.container_2{
+     background-color: #151426;
+     padding: 53px;
+     border-radius: 10px;
+     height: auto;
+}
+.container_3{     
+     background-color: #151426;
+     padding: 65px;
+     border-radius: 10px;
+     height: auto;
+}
+.move_side{
+     display: flex;
+     flex-direction: column;
+     width: 45%;
+     padding: 20px;
+     height: auto;
+}
+.header{
+     background-color: #8091F2;
+     position: -webkit-sticky;
+     position: sticky;
+     top: 0px;
+     border-radius: 10px;
+     height: 70px;
+}
+.choicePadding{
+     font-family: 'PT Sans Regular', sans-serif;
+     padding-left: 65px;
+     padding-right: 65px;
+     color: white;
+     font-size: 13pt; 
+     margin-left: auto;
+     margin-right: auto;
+}
+.center{
+     margin-left: auto;
+     margin-right: auto;
+     font-family: 'PT Sans Regular',sans-serif;
+     font-size: 8pt;
+}
+.new{
+     background-color: #231B40;
+     font-family: 'PT Sans Regular', sans-serif;
+     color: #BCB4D9;
+}
+a:link{
+     text-decoration: none;
+}
+a:visited{
+     text-decoration: none;
+}
+a:hover{
+     text-decoration: none;
+     color: #3c67dc;
+}
+
+@font-face {
+    font-family: 'PT Sans Narrow';
+    src: url('fonts/PTSansNarrow-Bold.eot');
+    src: url('fonts/PTSansNarrow-Bold.eot?#iefix') format('embedded-opentype'),
+         url('fonts/PTSansNarrow-Bold.woff2') format('woff2'),
+         url('fonts/PTSansNarrow-Bold.woff') format('woff'),
+         url('fonts/PTSansNarrow-Bold.ttf')  format('truetype'),
+         url('fonts/PTSansNarrow-Bold.svg#PT Sans Narrow') format('svg');
+    font-family: 'PT Sans Regular';
+    src: url('fonts/PTSansNarrow-Regular.eot');
+    src: url('fonts/PTSansNarrow-Regular.eot?#iefix') format('embedded-opentype'),
+         url('fonts/PTSansNarrow-Regular.woff2') format('woff2'),
+         url('fonts/PTSansNarrow-Regular.woff') format('woff'),
+         url('fonts/PTSansNarrow-Regular.ttf')  format('truetype'),
+         url('fonts/PTSansNarrow-Regular.svg#PT Sans Narrow') format('svg');
+}

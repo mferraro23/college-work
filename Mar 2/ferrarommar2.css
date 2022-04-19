@@ -1,0 +1,43 @@
+body{
+	background: url("https://gabyspizza.com/wp-content/uploads/2018/12/gabys_tour_35-1024x683.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+
+}
+table{
+	justify-self: center;
+	background-color: #EFE1CE;
+	color: #363945;
+	border-collapse: collapse;
+	border: 1px solid #BC243C;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+td{
+	padding: 10px;
+}
+th{
+	font-size: 20px;
+	font-weight: bold;
+	color: black;
+	font-style: oblique;
+}
+textarea{
+	width: 550px;
+	height: 200px;
+}
+.head{
+	color: black;
+	font-size: 18px;
+	font-weight: bold;
+}
+.secondary{
+	color: black;
+	font-size: 15px;
+	font-weight: bold;
+}

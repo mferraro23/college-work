@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Shopping List</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h2>My Shopping List</h2>
+	<p>Do your shopping here at <a href="https://www.amazon.com/alm/storefront?almBrandId=QW1hem9uIEZyZXNo&ref_=nav_em__afs_aaf_0_2_12_2">Amazon!</a></p>
+	<script type="text/javascript">
+		var docMessage = "";
+		var taxAmnt = .10;
+		var priceWithTax;
+		var storeName = "Amazon";
+		var itemOne = prompt("What is the first item you need to get?");
+		var priceOne = parseFloat(prompt("What is the price for the " + itemOne + "?"));
+		docMessage = "Items:<br>" + itemOne + " Cost: $" + priceOne.toFixed(2);
+		var itemTwo = prompt("What is the second item you need?");
+		var priceTwo = parseFloat(prompt("What is the price for the " + itemTwo + "?"));
+		docMessage += "<br>" + itemTwo + " Cost: $" + priceTwo.toFixed(2);
+		var itemThree = prompt("What is the last item you need?");
+		var priceThree = parseFloat(prompt("What is the price for the " + itemThree + "?"));
+		docMessage += "<br>" + itemThree + " Cost: $" + priceThree.toFixed(2);
+
+		docMessage += "<br>Total: $" + (priceOne+priceTwo+priceThree).toFixed(2);
+		docMessage += "<br>Tax: $" + ((priceOne+priceTwo+priceThree)*taxAmnt).toFixed(2);
+		priceWithTax = taxAmnt*(priceOne+priceTwo+priceThree) + priceOne+priceTwo+priceThree;
+		docMessage += "<br>Total Cost: $" + priceWithTax.toFixed(2);
+
+		document.write(docMessage);
+
+
+		document.write("<br><center><table border='1'><tr><td>Items</td><td>Price</td></tr><tr><td> 1." + itemOne + "</td><td>$" + priceOne + "</td></tr><tr><td>2. " + itemTwo + "</td><td>$" + priceTwo + "</td></tr><tr><td>3." + itemThree + "</td><td>$" + priceThree + "</td></tr><tr><td colspan='2'>Buy all at " + storeName + "</td></tr></table></center>")
+	</script>
+
+</body>
+</html>

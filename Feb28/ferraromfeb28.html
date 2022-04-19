@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Forms</title>
+	<link rel="stylesheet" type="text/css" href="ferraromfeb28.css">
+</head>
+<body>
+	<h1>What can you add to a form?</h1>
+	<fieldset><legend>Personal Information</legend>
+	<form action="mailto:mf69836p@pace.edu?subject=my info" method="post">
+		<label>First Name  </label><input type="text" id="fname" name="fname"><br><br>
+		<label>Last Name  </label><input type="text" id="lname" name="lname"><br><br>
+		<label>email  </label><input type="text" id="email" name="email"><br><br>
+		<label>Month</label>
+		<select id="month" name="month">
+			<option value="January">January</option>
+			<option value="February" selected>February</option>
+			<option value="March">March</option>
+			<option value="April">April</option>
+			<option value="May">May</option>
+			<option value="June">June</option>
+			<option value="July">July</option>
+			<option value="August">August</option>
+			<option value="September">September</option>
+			<option value="October">October</option>
+			<option value="November">November</option>
+			<option value="December">December</option>
+		</select>
+		&nbsp;
+		<label>Day</label>
+		<select id="day" name="day">
+			<option value="One">1</option>
+			<option value="Two">2</option>
+			<option value="Three">3</option>
+			<option value="Four">4</option>
+			<option value="Five">5</option>
+			<option value="Six">6</option>
+			<option value="Seven">7</option>
+			<option value="Eight">8</option>
+			<option value="Nine">9</option>
+			<option value="Ten">10</option>
+			<option value="Eleven">11</option>
+			<option value="Twelve">12</option>
+			<option value="Thirteen">13</option>
+			<option value="Four_teen">14</option>
+			<option value="Fif_teen">15</option>
+			<option value="Six_teen">16</option>
+			<option value="Seven_teen">17</option>
+			<option value="Eight_teen">18</option>
+			<option value="Nine_teen">19</option>
+			<option value="Twenty">20</option>
+			<option value="Twenty_one">21</option>
+			<option value="Twenty_two">22</option>
+			<option value="Twenty_three">23</option>
+			<option value="Twenty_four">24</option>
+			<option value="Twenty_five">25</option>
+			<option value="Twenty_six">26</option>
+			<option value="Twenty_seven">27</option>
+			<option value="Twenty_eight" selected>28</option>
+			<option value="Twenty_nine">29</option>
+			<option value="Thrity_two">30</option>
+			<option value="Thrity_one">31</option>
+
+		</select>
+		&nbsp;
+		<label>Year</label>
+		<select id="year">
+			<option value="nintyfive">1995</option>
+			<option value="nintysix">1996</option>
+			<option value="nintyseven">1997</option>
+			<option value="nintyeight">1998</option>
+			<option value="nintynine">1999</option>
+			<option value="twothousand">2000</option>
+			<option value="zero_one">2001</option>
+			<option value="zero_two">2002</option>
+			<option value="zero_three">2003</option>
+			<option value="zero_four">2004</option>
+			<option value="zero_five">2005</option>
+			<option value="zero_six">2006</option>
+			<option value="zero_seven">2007</option>
+			<option value="zero_eight">2008</option>
+			<option value="zero_nine">2009</option>
+			<option value="zero_ten">2010</option>
+			<option value="zero_eleven">2011</option>
+			<option value="zero_twelve">2012</option>
+			<option value="zero_thirteen">2013</option>
+			<option value="zero_fourteen">2014</option>
+			<option value="zero_fifteen">2015</option>
+			<option value="zero_sixteen">2016</option>
+			<option value="zero_seventeen">2017</option>
+			<option value="zero_eighteen">2018</option>
+			<option value="zero_nineteen">2019</option>
+			<option value="zero_twenty">2020</option>
+			<option value="zero_twentyone">2021</option>
+			<option value="zero_twentytwo" selected>2022</option>
+			<option value="zero_twentythree">2023</option>
+			<option value="zero_twentyfour">2024</option>
+			<option value="zero_twentyfive">2025</option>
+			<option value="zero_twentysix">2026</option>
+			<option value="zero_twentyseven">2027</option>
+		</select>
+		<br><br>
+		<label>Pick a Major</label>
+		<select multiple size="2">
+			<optgroup>Siedenberg</optgroup>
+			<option value="comp_sci">Computer Science</option>
+			<option value="cit">Computer Information Technology</option>
+			<option value="is">Information Systems</option>
+			<option value="finance">Finance</option>
+		</select>
+		<br><br>
+		<label>Living Status: </label>
+		<label>Campus</label><input type="radio" name="housing" value="campus">&nbsp;
+		<label>Commuter</label><input type="radio" name="housing" value="commuter">&nbsp;
+		<br><br>
+		<label>How do you get to class?</label><br>
+		<label>Walking</label><input type="checkbox" name="walking">&nbsp;
+		<label>Bus</label><input type="checkbox" name="bus">&nbsp;
+		<label>Subway</label><input type="checkbox" name="subway">&nbsp;
+		<label>Train</label><input type="checkbox" name="train">&nbsp;
+		<label>Drive</label><input type="checkbox" name="drive">&nbsp;
+		<label>Ferry</label><input type="checkbox" name="ferry">&nbsp;
+		<br><br>
+		<label>Please post questions and comments here</label><br>
+		<textarea rows="15" cols="55"></textarea>
+
+		<p>
+		<input type="submit" id="submitBtn" name="submitBtn" value="Press Me"> &nbsp;
+		<input type="reset" id="resetBtn" name="resetBtn" value="Reset">
+		</p>
+	</form>
+	</fieldset>
+</body>
+</html>

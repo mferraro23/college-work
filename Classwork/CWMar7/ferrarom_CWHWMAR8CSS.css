@@ -1,0 +1,62 @@
+body{
+	background-color: plum;
+	font-size: 24pt;
+	text-align: center;
+	margin: 50px;
+}
+table{
+	background-color: orange;
+	font-size: 24pt;
+
+}
+h1{
+	background-color: white;
+	text-align: middle;
+	vertical-align: middle;
+	font-size: 30pt;
+}
+select{
+	vertical-align: middle;
+}
+legend{
+	background-color: green;
+	color: darkred;
+	font-size: 15pt;
+	font-weight: bold;
+	text-align: left;
+}
+fieldset{
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-right: 25px;
+	background-color: yellow;
+	border: none;
+}
+hr{
+	height: 15;
+	background-color: mediumvioletred;
+	border: mediumvioletred;
+}
+.port{
+	height: 435px;
+	width: 300px;
+}
+.port2{
+	height: 275px;
+	width: 300px;
+}
+.table1{
+	margin: 10px;
+	border: 1px red double;
+	width: 90%;
+	font-size: 20pt;
+}
+.table2{
+	text-align: center;
+	margin: 10px;
+	width: 90%;
+}
+.full{
+	text-align: center;
+	width: 90%;
+}

@@ -1,0 +1,34 @@
+body{
+	margin: 200px;
+}
+img{
+	width: 500px;
+	height: 300px;
+}
+.biggerFont{
+	font-size: 20px;
+	font-family: Times New Roman;
+	font-weight: bold;
+}
+.comicSans{
+	font-family: comic sans ms;
+}
+.allBorders{
+	border: darkred 5px	inset;
+}
+.topBottomBorder{
+	border: paleturquoise;
+	border-width: 5px 5px;
+	border-style: inset;
+	padding: 10px;
+}
+.allDiff{
+	border-color: lightgoldenrodyellow forestgreen darkorange palevioletred;
+	border-width: 5px 5px;
+	border-style: inset;
+}
+.threeSides{
+	border-color: orangered greenyellow limegreen;
+	border-width: 5px 5px 5px;
+	border-style: dashed inset double;
+}

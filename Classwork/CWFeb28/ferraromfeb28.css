@@ -1,0 +1,25 @@
+body{
+	background-color: #A0DAA9;
+	color: #6B5B95;
+	margin-left: 20px;
+
+}
+legend{
+	color: #6B5B95;
+	font-weight: bold;
+	font-size: 25pt;
+	
+}
+fieldset{
+	border: 5px #92A8D1 inset;
+	border-radius: 25px;
+	padding-left: 30px;
+	padding-top: 30px;
+	padding-bottom: 25px;
+	background-color: #F7CAC9;
+	color: #6B5B95;
+}
+label{
+	font-weight: bold;
+	font-size: 18pt;
+}

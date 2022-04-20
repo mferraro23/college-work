@@ -1,0 +1,17 @@
+body{
+	background-color: lime;
+	color: navy;
+	font-size: 18pt;
+}
+.rect{
+	width: 150px;
+	height: 75px;
+}
+.square{
+	width: 100px;
+	height: 100px;
+}
+.circle{
+	width: 100px;
+	height: 100px;
+}

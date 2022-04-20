@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>What type of car do you want?</title>
+	<link rel="stylesheet" type="text/css" href="ferrarommar28.css">
+</head>
+<body>
+	<h2>What is the car of my dreams?</h2>
+	<script type="text/javascript">
+		var docMessage = "";
+		var yearsOld = parseInt(prompt("How many years old do you want your car to be?",3));
+		if (yearsOld<=1){
+			docMessage = "Your car is relativley new.";
+		}
+		else if (yearsOld > 1 && yearsOld<=5){
+			docMessage = "Your car is certified new!";
+		}
+		else if (yearsOld>=25){
+			docMessage = " Your car is a classic!"
+		}
+		else{
+			docMessage = "You have a used car."
+		}
+		
+		docMessage += "<br>Your ideal car will be " + yearsOld + " years old.";
+
+		var carType = prompt("What would you like the make of your car to be?", "bmw").toLowerCase();
+		var ideal = "My ideal car is a ";
+
+		switch (carType){
+			case "bmw":
+				ideal+="BMW";
+				break;
+			case "nissan":
+				ideal+="Nissan";
+				break;
+			case "kia":
+				ideal+="KIA";
+				break;
+			case "lamborghini":
+				ideal+="Lamborghini";
+				break;
+			case "audi":
+				ideal+="Audi";
+				break;
+			case "mercedes":
+				ideal+="Mercedes Benz";
+				break;
+			case "toyota":
+				ideal+="Toyota... IS THAT A SUPRA?";
+				break;
+			default:
+				ideal="Your ideal car is not an option.";
+		}
+		docMessage+="<br>" + ideal;
+		
+		
+
+		document.write(docMessage);
+	</script>
+
+
+</body>
+</html>

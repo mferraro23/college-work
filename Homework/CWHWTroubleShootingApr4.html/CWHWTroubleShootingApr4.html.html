@@ -1,0 +1,64 @@
+<html>
+	<head>
+		<title>What is your average grade?</title>
+		<style type="text/css">
+				
+		</style>
+	</head>
+<body>
+	<h2>my grades for the class</h2>
+
+<script>
+
+function calcGrade()
+{
+	//generate a random grade between 50-100 here
+	var grade1 = parseInt(prompt("What grade did you receive",95));
+
+	//const value of 90 here
+	var grade2 = parseInt(prompt("What grade did you receive",95));
+
+	//input a manual grade from the user here
+	var grade3 = parseInt(prompt("What grade did you receive",95));
+
+	document.write("Your grades are "+ grade1+ ","+ grade2 + "," + grade3);
+
+	var gradeAvg = (grade1+grade2+grade3)/3;
+	document.write("Your average score is a " + gradeAvg + "<br>");
+	if (gradeAvg>=90)
+	{
+		document.write("Your grade is an A, congrats");
+		document.write("<img src=''>");
+	}
+	else if (gradeAvg>=80)
+	{
+		document.write("B grade, good work!");
+		document.write("<img src=''>");
+	}
+	else if (gradeAvg>=70)
+	{
+		document.write("Your grade is a C");
+		document.write("<img src=''>");
+	}
+	else if (gradeAvg>=60)
+	{
+		document.write("You barely passed with a D");
+		document.write("<img src=''>");
+	}
+	else if (gradeAvg<60)
+	{
+		document.write("Sorry you failed the class");
+		document.write("<img src=''>");
+	}
+	else
+	{
+		document.write("Wrong values, please try again");
+	}
+	
+}
+
+calcGrade();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Functions</title>
+	<link rel="stylesheet" type="text/css" href="ferrarommar30.css">
+</head>
+<body>
+	<h2>Play with some shapes</h2>
+	<script type="text/javascript">
+		var len;
+		var randomNum;
+		var docMessage;
+		var width;
+		var area;
+		var radius = Math.floor(Math.random() * 10 + 1);
+		function calcSquare(){
+			//generate a random number from 10
+			len = Math.floor(Math.random() * 10 + 1);
+			width = Math.floor(Math.random() * 10 + 1);
+			area = len * width;
+			randomNum = Math.random();
+			docMessage = "The random length is " + len + ".&nbsp; The random width is " + width + ".&nbsp; The area calculated is " + area + ".<br>";
+			if (len == width){
+				docMessage += "SQUARE!<br><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8XFqF5rPgYotiGkYSpe7wji541p38z7OCRw&usqp=CAU' class='square'><br>"
+			}
+			else{
+				docMessage += "The shape is a rectangle.<br><img src='https://d1whtlypfis84e.cloudfront.net/guides/wp-content/uploads/2018/07/20131909/11-300x178.png' class='rect'><br>"
+			}
+			document.write(docMessage);
+			
+		}
+		function calcCircle(rad){
+			radius = rad;
+			area = Math.PI * (Math.pow(radius,2));
+			docMessage = "The area of the circle is " + area + ".<br><img src='https://sites.google.com/site/basicgeometricshapes/_/rsrc/1328755343139/home/cirlce/cirlce.jpg.png' class='circle'><br>";
+			document.write(docMessage);
+			return area;
+		}
+
+
+
+		calcSquare();
+		calcSquare();
+		calcSquare();
+		calcSquare();
+		var circle = calcCircle(radius);
+		
+		
+	</script>
+
+</body>
+</html>

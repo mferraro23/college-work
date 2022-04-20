@@ -1,0 +1,46 @@
+.muffins{
+	width: 825px;
+	height: 500px;
+}
+.info{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	border-top: 1px solid darkslategrey;
+	border-bottom: 1px solid darkslategrey;
+	color: darkslategrey;
+}
+a:link{
+	color: black;
+}
+a:visited{
+	color: black;
+}
+a:hover{
+	color: skyblue;
+}
+b{
+	font-size: 19px;
+}
+body{
+	counter-reset: number;
+	background-color: floralwhite;
+}
+h1{
+	font-size: 40px;
+}
+h2{
+	text-align: center;
+}
+h4::before{
+	counter-increment: number;
+	content: "" counter(number)": ";
+
+}
+td{
+	padding: 5px;
+	word-wrap: break-word;
+}
+strong{
+	font-size: 18px;
+}

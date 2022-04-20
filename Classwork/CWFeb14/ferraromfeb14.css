@@ -1,0 +1,25 @@
+body{
+	background-color: #DFA8F0;
+	margin: 50px;
+	border: 5px lightblue double;
+	padding: 25px;
+}
+img{
+	height: 300px;
+	width: 400px;
+}
+
+.hearts{
+	height: 300px;
+	width: 450px;
+}
+.landscape{
+	height: 300px;
+	width: 550px;
+}
+
+table,tr,td{
+	border: 1px lavenderblush solid;
+	border-collapse: collapse;
+	padding: 5px;
+}

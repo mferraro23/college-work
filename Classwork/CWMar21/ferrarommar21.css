@@ -1,0 +1,11 @@
+body{
+	background-color: skyblue;
+}
+div{
+	font-size: 20pt;
+	color: darkred;
+}
+img{
+	height: 200px;
+	width: 375px;
+}

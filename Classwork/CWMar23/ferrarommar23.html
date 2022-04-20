@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Transportation</title>
+	<link rel="stylesheet" type="text/css" href="ferrarommar23.css">
+</head>
+<body>
+	<h1>What <strong><em>Transportation</em></strong> did I use today?</h1>
+	<ol>
+		<li>Subway</li>
+		<li>Car</li>
+		<li>Bus</li>
+		<li>Train</li>
+		<li>Walk</li>
+	</ol>
+	<script type="text/javascript">
+		var transportation = prompt("How did you commute today?");
+		var cost1 = parseFloat(prompt("What was the cost?"));
+
+		var docMessage = "The transportation you used: " + transportation;
+		docMessage += "<br>Cost: $" + cost1;
+
+		var bool = true;
+		var inc = 2;
+		var total = cost1;
+
+		//find multiple methods of transportations with respected costs.//
+		while(bool === true){
+			var ask = prompt("Did you use another method of transportation? ");
+			
+			if (ask === "yes" || ask === "Yes" || ask === "YES"){
+				var transportationNext = prompt("What was the other method? ");
+				var costNext = parseFloat(prompt("How much did " + transportationNext + " cost? "));
+				docMessage += "<br>Method " + inc + " of transportation: " + transportationNext + "<br>Cost: $" + costNext;
+				inc += 1;
+				total += costNext
+			}
+			else if (ask === "no" || ask === "NO" || ask === "No"){
+				bool = false;
+				docMessage += "<br>Total Cost: $" + total;
+			}
+			
+		} 
+		//ask if commute multiple days.//
+		var daysCommute = parseInt(prompt("How many days did you commute this week?"));
+		total *= daysCommute;
+		docMessage += "<br>Total cost for the week: $" + total;
+		if (total >= 35){
+			docMessage += "<br>Maybe do online classes instead for a week:)<br><img src='https://cdn.onekindesign.com/wp-content/uploads/2021/03/California-Modern-Home-In-Texas-Coats-Homes-01-1-Kindesign.jpg'>";
+		}
+		else if (total == 15.00){
+			docMessage += "<br>This is the perfect price!";
+		}
+		else{
+			docMessage += "<br>The cost isnt too bad, get to work!";
+		}
+		
+		
+		document.write(docMessage);
+
+	</script>
+</body>
+</html>

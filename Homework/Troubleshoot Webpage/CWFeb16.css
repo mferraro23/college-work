@@ -1,0 +1,56 @@
+body{
+	/*background-size: cover;margin: 0px 300px;*/
+	background-color: lightblue;
+	background-image: url("https://s3-prod.adage.com/s3fs-public/styles/800x600/public/20220114_SuperBowl2022_WinterOlympics2022_3X2.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	margin: 30px;
+	
+}
+hr{
+	width: 1800px;
+}
+div, body{
+	align-content: center;
+	color: orange;
+}
+
+.tinyFlag{
+	height: 25px;
+	width: 30px;
+}
+
+img{
+	height: 125px;
+	width: 70px;
+}
+tr,table,td,th{
+	background-color: black;
+	color: white;
+	border: 1px white solid;
+	border-collapse: collapse;
+	padding: 5px;
+}
+
+.textRight{
+	text-align: right;
+}
+
+.textLeft{
+	text-align: left;
+}
+
+li{
+	color: black;
+}
+
+.navTable{
+	background-color: gold;
+	color: navy;
+}
+
+a:link{color: gold;}
+a:visited{color: yellow;}
+a:hover{color: orange;}
+a:active{color: red;}

@@ -176,17 +176,17 @@ label{
 }
 .choicePadding{
      font-family: 'PT Sans Regular', sans-serif;
-     padding-left: 65px;
-     padding-right: 65px;
+     padding-left: 50px;
+     padding-right: 50px;
      color: white;
-     font-size: 13pt; 
+     font-size: 15pt;
      margin-left: auto;
      margin-right: auto;
 }
 .move{
      margin-left: auto;
      margin-right: auto;
-     width: 750px;
+     width: 650px;
      height: auto;
 }
 

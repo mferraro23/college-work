@@ -301,14 +301,14 @@
 	</div>
 	<hr>
 	<!-- Buy tab -->
-	<div class="container_1">
+	<div class="container_1" id='buying'>
 		<div class="move">
 				<div class="container_2">
 					<hr>
 					<h2>Buy</h2>
 					<!--Questions-->
 					<div style="text-align: center;">
-						<label class="biggerFont" for='input' id='buying'>Which one do you want to buy?</label>
+						<label class="biggerFont" for='input' >Which one do you want to buy?</label>
 						<input type='text' id='input'>
 						<button type='button' onclick='getInfo()'>Learn More!</button>
 						<br>
@@ -326,8 +326,59 @@
 					<hr>
 				</div>
 		</div>
+		<div class="move_side">
+			<div class="move">
+				<div class="container_2">
+					<hr>
+					<h2>I'm Feeling Lucky!</h2>
+					<!--Feeling Lucky-->
+					<div style="text-align: center;">
+						<label class="biggerFont" for='lucky' id='im_lucky'>How many cores will you get?</label>
+						<button id='lucky' type='button' onclick='lucky()'>Roll!</button>
+						<br>
+						<!--Document to write to-->
+						<p class = "new" id="new_insert">L U C K Y</p>
+					</div>
+					<hr>
+				</div>
+			</div>
+		</div>
 	</div>
 	<script type="text/javascript">
+		// spin wheel to get lucky number of cores
+		async function lucky(){
+			let cores = ['4', '6', '8', '16', '24', '32','48', '64'];
+			const sleep = ms => new Promise(r => setTimeout(r, ms));
+			let winning_num;
+
+			for(let i=0; i <= cores.length-2; i++){
+				let rand = Math.floor(Math.random()*cores.length);
+				document.querySelector('#new_insert').innerHTML = cores[rand];
+				await sleep(100);
+			}
+			for(let i=0; i <= cores.length-3; i++){
+				let rand = Math.floor(Math.random()*cores.length);
+				document.querySelector('#new_insert').innerHTML = cores[rand];
+				await sleep(250);
+			}
+			for(let i=0; i <= cores.length-4; i++){
+				let rand = Math.floor(Math.random()*cores.length);
+				document.querySelector('#new_insert').innerHTML = cores[rand];
+				await sleep(400);
+			}
+			for(let i=0; i <= cores.length-5; i++){
+				let rand = Math.floor(Math.random()*cores.length);
+				document.querySelector('#new_insert').innerHTML = cores[rand];
+				await sleep(550);
+			}
+			for(let i=0; i <= cores.length-6; i++){
+				let rand = Math.floor(Math.random()*cores.length);
+				document.querySelector('#new_insert').innerHTML = cores[rand];
+				await sleep(700);
+				winning_num = cores[rand];
+			}
+			alert("Congrats! You got " + winning_num + " total cores in your CPU!");
+		}
 		// get more info from company websites
 		function getInfo(){
 			let info;

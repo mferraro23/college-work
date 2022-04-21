@@ -1,5 +1,5 @@
 html{
-     scroll-behavior: smooth;
+     scroll-behavior: smooth !important;
 }
 body{
      background-color: #231B40;
@@ -104,9 +104,14 @@ label{
      height: 650px;
 }
 .amd_1{
-     width: 350px;
-     height: 385px;
+     width: 385px;
+     height: 325px;
 }
+.intel{
+     width: 375px;
+     height: 270px;
+}
+
 .container{
      background-color: #151426;
      font-family: 'PT Sans Regular', sans-serif;

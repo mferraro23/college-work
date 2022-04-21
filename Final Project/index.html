@@ -294,20 +294,25 @@
 </div>
 <hr>
 <!-- Buy tab -->
-<div style="text-align: center;">
-	<label for='input' id='buying'>Which one do you want to buy?</label>
-	<input type='text' id='input'>
-	<button type='button' onclick='getInfo()'>Learn More!</button>
+<div class="container_1">
+	<div class="move">
+			<div class="container_2">
+				<h2>Buy</h2>
+				<label class="biggerFont" for='input' id='buying'>Which one do you want to buy?</label>
+				<input type='text' id='input'>
+				<button type='button' onclick='getInfo()'>Learn More!</button>
 
-	<br><label for='chip'>Enter the price of the chip you want: </label><input type='text' id='chip'>
+				<br><label class="smallerFont" for='chip'>Enter the price of the chip you want: </label><input type='text' id='chip'>
 
-	<label for='amount'>How much money do you have?</label><input type='text' id='amount'>
+				<br><label class="smallerFont" for='amount'>How much money do you have?</label><input type='text' id='amount'>
 
-	<label for='pay'>How much is your weekly pay?</label><input type='text' id='pay'>
+				<br><label class="smallerFont" for='pay'>How much is your weekly pay?</label><input type='text' id='pay'>
 
-	<button type='button' onclick='buy()'>Buy!</button>
-	<p class = "new" id="insert"></p>
-	<p class = "newer" id="inserted"></p>
+				<button type='button' onclick='buy()'>Buy!</button>
+				<p class = "new" id="insert"></p>
+				<p class = "newer" id="inserted"></p>
+			</div>
+	</div>
 </div>
 <script type="text/javascript">
 	// get more info from company websites

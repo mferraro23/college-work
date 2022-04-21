@@ -55,9 +55,14 @@ button:not([disabled]):hover {
   box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
 }
 label{
-     background-color: #231B40;
      font-family: 'PT Sans Regular', sans-serif;
      color: #BCB4D9;
+}
+.biggerFont{
+     font-size: 30px;
+}
+.smallerFont{
+     font-size: 15pt;
 }
 .pics{
      float: left;
@@ -178,6 +183,13 @@ label{
      margin-left: auto;
      margin-right: auto;
 }
+.move{
+     margin-left: auto;
+     margin-right: auto;
+     width: 750px;
+     height: auto;
+}
+
 .center{
      margin-left: auto;
      margin-right: auto;
@@ -185,15 +197,14 @@ label{
      font-size: 8pt;
 }
 .new{
-     background-color: #231B40;
      font-family: 'PT Sans Regular', sans-serif;
      color: #BCB4D9;
 }
 .newer{
-     background-color: #231B40;
      font-family: 'PT Sans Regular', sans-serif;
      color: #BCB4D9;
      font-size: 30pt;
+     text-align: center;
 }
 a:link{
      text-decoration: none;

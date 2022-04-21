@@ -1,5 +1,5 @@
 html{
-     scroll-behavior: smooth;
+     scroll-behavior: smooth !important;
 }
 body{
      background-color: #231B40;
@@ -55,9 +55,14 @@ button:not([disabled]):hover {
   box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
 }
 label{
-     background-color: #231B40;
      font-family: 'PT Sans Regular', sans-serif;
      color: #BCB4D9;
+}
+.biggerFont{
+     font-size: 30px;
+}
+.smallerFont{
+     font-size: 15pt;
 }
 .pics{
      float: left;
@@ -104,9 +109,14 @@ label{
      height: 650px;
 }
 .amd_1{
-     width: 350px;
-     height: 385px;
+     width: 385px;
+     height: 325px;
 }
+.intel{
+     width: 375px;
+     height: 270px;
+}
+
 .container{
      background-color: #151426;
      font-family: 'PT Sans Regular', sans-serif;
@@ -166,13 +176,20 @@ label{
 }
 .choicePadding{
      font-family: 'PT Sans Regular', sans-serif;
-     padding-left: 65px;
-     padding-right: 65px;
+     padding-left: 50px;
+     padding-right: 50px;
      color: white;
-     font-size: 13pt; 
+     font-size: 15pt;
      margin-left: auto;
      margin-right: auto;
 }
+.move{
+     margin-left: auto;
+     margin-right: auto;
+     width: 650px;
+     height: auto;
+}
+
 .center{
      margin-left: auto;
      margin-right: auto;
@@ -180,9 +197,14 @@ label{
      font-size: 8pt;
 }
 .new{
-     background-color: #231B40;
      font-family: 'PT Sans Regular', sans-serif;
      color: #BCB4D9;
+}
+.newer{
+     font-family: 'PT Sans Regular', sans-serif;
+     color: #BCB4D9;
+     font-size: 30pt;
+     text-align: center;
 }
 a:link{
      text-decoration: none;

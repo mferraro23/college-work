@@ -184,6 +184,12 @@ label{
      font-family: 'PT Sans Regular', sans-serif;
      color: #BCB4D9;
 }
+.newer{
+     background-color: #231B40;
+     font-family: 'PT Sans Regular', sans-serif;
+     color: #BCB4D9;
+     font-size: 30pt;
+}
 a:link{
      text-decoration: none;
 }

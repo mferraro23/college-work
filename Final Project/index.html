@@ -307,7 +307,7 @@
 
 	<button type='button' onclick='buy()'>Buy!</button>
 	<p class = "new" id="insert"></p>
-	<p class = "new" id="inserted"></p>
+	<p class = "newer" id="inserted"></p>
 </div>
 <script type="text/javascript">
 	// get more info from company websites
@@ -327,25 +327,30 @@
 	}
 	async function cpuMake() {
 		let info = document.querySelector('#cpu_make').value.toLowerCase();
-		let count = 5;
 		const sleep = ms => new Promise(r => setTimeout(r, ms));
 		if (info === 'amd') {
+			let count = 5;
 			do {
 				document.querySelector('#inserted').innerHTML = count.toString();
 				count -= 1;
 				await sleep(1000);
 			} while (count !== 0)
-
-			window.open('https://www.amd.com/en/direct-buy/us', '_blank');
-			console.log('amd');
+			if (count===0){
+				window.open('https://www.amd.com/en/direct-buy/us', '_blank');
+				console.log('amd');
+			}
 		} else if (info === 'intel') {
+			let count = 5;
 			do {
 				document.querySelector('#inserted').innerHTML = count.toString();
 				count -= 1;
 				await sleep(1000);
 			} while (count !== 0)
-			window.open('https://www.bestbuy.com/site/shop/intel-processors', '_blank');
-			console.log('intel')
+			if (count === 0){
+				window.open('https://www.bestbuy.com/site/shop/intel-processors', '_blank');
+				console.log('intel')
+			}
+
 		} else {
 			alert("Sorry i dont recognize " + info + ".");
 		}

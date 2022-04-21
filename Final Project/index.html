@@ -336,15 +336,21 @@
 				await sleep(1000);
 			} while (count !== 0)
 
-			window.open('https://www.amd.com/en', '_blank');
+			window.open('https://www.amd.com/en/direct-buy/us', '_blank');
 			console.log('amd');
 		} else if (info === 'intel') {
-			window.open('https://www.intel.com/content/www/us/en/homepage.html', '_blank');
+			do {
+				document.querySelector('#inserted').innerHTML = count.toString();
+				count -= 1;
+				await sleep(1000);
+			} while (count !== 0)
+			window.open('https://www.bestbuy.com/site/shop/intel-processors', '_blank');
 			console.log('intel')
 		} else {
 			alert("Sorry i dont recognize " + info + ".");
 		}
 	}
+	// if user can buy the product take them to correct store page.
 	function canBuy(){
 		document.querySelector('#insert').innerHTML = "<label for='cpu_make'>You can buy a cpu, what cpu are you looking for?</label><br><input id='cpu_make' type='text'><button type='button' onclick='cpuMake()'>GO!</button>";
 	}

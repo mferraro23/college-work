@@ -297,20 +297,24 @@
 <div class="container_1">
 	<div class="move">
 			<div class="container_2">
+				<hr>
 				<h2>Buy</h2>
-				<label class="biggerFont" for='input' id='buying'>Which one do you want to buy?</label>
-				<input type='text' id='input'>
-				<button type='button' onclick='getInfo()'>Learn More!</button>
+				<div style="text-align: center;">
+					<label class="biggerFont" for='input' id='buying'>Which one do you want to buy?</label>
+					<input type='text' id='input'>
+					<button type='button' onclick='getInfo()'>Learn More!</button>
+					<br>
+					<br><label class="smallerFont" for='chip'>Enter the price of the chip you want: </label><input type='text' id='chip'>
+					<br>
+					<br><label class="smallerFont" for='amount'>How much money do you have? </label><input type='text' id='amount'>
+					<br>
+					<br><label class="smallerFont" for='pay'>How much is your weekly pay? </label><input type='text' id='pay'>
 
-				<br><label class="smallerFont" for='chip'>Enter the price of the chip you want: </label><input type='text' id='chip'>
-
-				<br><label class="smallerFont" for='amount'>How much money do you have?</label><input type='text' id='amount'>
-
-				<br><label class="smallerFont" for='pay'>How much is your weekly pay?</label><input type='text' id='pay'>
-
-				<button type='button' onclick='buy()'>Buy!</button>
-				<p class = "new" id="insert"></p>
-				<p class = "newer" id="inserted"></p>
+					<button type='button' onclick='buy()'>Buy!</button>
+					<p class = "new" id="insert"></p>
+					<p class = "newer" id="inserted"></p>
+				</div>
+				<hr>
 			</div>
 	</div>
 </div>
@@ -362,7 +366,7 @@
 	}
 	// if user can buy the product take them to correct store page.
 	function canBuy(){
-		document.querySelector('#insert').innerHTML = "<label for='cpu_make'>You can buy a cpu, what cpu are you looking for?</label><br><input id='cpu_make' type='text'><button type='button' onclick='cpuMake()'>GO!</button>";
+		document.querySelector('#insert').innerHTML = "<label for='cpu_make'><br>You can buy a cpu, what cpu are you looking for? </label><br><input id='cpu_make' type='text'>&nbsp;<button type='button' onclick='cpuMake()'>GO!</button>";
 	}
 
 	// figure out if user can buy product

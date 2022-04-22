@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,70 +13,99 @@
 			<th colspan="4">Food Order</th>
 			<tr>
 				<td colspan="2">
-					<label class="head">Full Name  </label><input type="text" name="fullname" id="fullname">
+					<label class="head" for="fullname">Full Name  </label><input type="text" name="fullname" id="fullname">
 				</td>
 				<td colspan="2">
-					<label class="head">Email  </label><input type="text" name="email" id="email">
+					<label class="head" for="email">Email  </label><input type="text" name="email" id="email">
 				</td>
 			</tr>
 			<tr>
 				<td colspan="2">
 					<label class="head">Address  </label><br>
-					<input type="text" name="address" id="address" size="30">
+					<label for="address"></label><input type="text" name="address" id="address" size="30">
 				</td>
 				<td colspan="2">
 					<label class="head">Phone Number  </label>
-					<input type="text" name="phone_number" id="phone_number">
+					<label for="phone_number"></label><input type="text" name="phone_number" id="phone_number">
 				</td>
 			</tr>
 			<tr>
 				<td colspan="2">
-					<label class="head">Sandwhich Type</label><br>
-					<input type="radio" name="Sandwhich">
-					<label>Chicken Parm</label>
-					<input type="radio" name="Sandwhich">
+					<label class="head">Sandwich Type</label><br>
+					<label>
+						<input type="radio" name="Sandwich">
+					</label>
+					<label>Chickenparm</label>
+					<label>
+						<input type="radio" name="Sandwich">
+					</label>
 					<label>Meatball Sub</label>
-					<input type="radio" name="Sandwhich">
+					<label>
+						<input type="radio" name="Sandwich">
+					</label>
 					<label>Hamburger</label>
-					<input type="radio" name="Sandwhich">
+					<label>
+						<input type="radio" name="Sandwich">
+					</label>
 					<label>Italian Combo</label>
-					<input type="radio" name="Sandwhich">
+					<label>
+						<input type="radio" name="Sandwich">
+					</label>
 					<label>Veggie</label>
 				</td>
 				<td colspan="2">
 					<label class="head">Options</label><br>
 					<label>Salt</label>
-					<input type="checkbox" name="salt">
+					<label>
+						<input type="checkbox" name="salt">
+					</label>
 					<label>Pepper</label>
-					<input type="checkbox" name="pepper">
+					<label>
+						<input type="checkbox" name="pepper">
+					</label>
 					<label>Ketchup</label>
-					<input type="checkbox" name="Ketchup">
+					<label>
+						<input type="checkbox" name="Ketchup">
+					</label>
 					<label>Mayo</label>
-					<input type="checkbox" name="Mayo">
+					<label>
+						<input type="checkbox" name="Mayo">
+					</label>
 				</td>
 			</tr>
 			<tr>
 				<td colspan="4">
-					<label class="head">Special Delivery Instructions</label><br><textarea type="text" name="delivery_instructions" id="deliver_instructions"></textarea>
+					<label class="head">Special Delivery Instructions</label><br><label
+						for="deliver_instructions"></label><textarea type="text" name="delivery_instructions" id="deliver_instructions"></textarea>
 				</td>
 			</tr>
 			<tr>
 				<td colspan="2">
 					<label class="head">Payment Information</label><br>
 					<label class="secondary">Card Type</label><br>
-					
-					<input type="radio" name="cardtype" value="AMEX">
+
+					<label>
+						<input type="radio" name="card-type" value="AMEX">
+					</label>
 					<label>AMEX</label>
-					<input type="radio" name="cardtype" value="VISA">
+					<label>
+						<input type="radio" name="card-type" value="VISA">
+					</label>
 					<label>VISA</label>
-					<input type="radio" name="cardtype" value="MASTERCARD">
+					<label>
+						<input type="radio" name="card-type" value="MASTERCARD">
+					</label>
 					<label>MASTERCARD</label>
-					<input type="radio" name="cardtype" value="DISCOVER">
+					<label>
+						<input type="radio" name="card-type" value="DISCOVER">
+					</label>
 					<label>DISCOVER</label><br>
-					<label class="secondary">Enter Credit Card</label><input type="text" name="creditcard">
+					<label class="secondary">Enter Credit Card</label><label>
+					<input type="text" name="credit-card">
+				</label>
 				</td>
 				<td>
-					<label class="secondary">Month Select  </label>
+					<label class="secondary" for="month">Month Select  </label>
 					<select id="month" name="month">
 						<option value="jan">01</option>
 						<option value="feb">02</option>
@@ -91,31 +120,31 @@
 						<option value="nov">11</option>
 						<option value="dec">12</option>
 					</select>
-					<label class="secondary">Year Select  </label>
+					<label class="secondary" for="year">Year Select  </label>
 					<select id="year">
-						<option value="twentytwo">2022</option>
-						<option value="twentythree">2023</option>
-						<option value="twentyfour">2024</option>
-						<option value="twentyfive">2025</option>
-						<option value="twentysix">2026</option>
-						<option value="twentyseven">2027</option>
-						<option value="twentyeight">2028</option>
-						<option value="twentynine">2029</option>
+						<option value="twenty_two">2022</option>
+						<option value="twenty_three">2023</option>
+						<option value="twenty_four">2024</option>
+						<option value="twenty_five">2025</option>
+						<option value="twenty_six">2026</option>
+						<option value="twenty_seven">2027</option>
+						<option value="twenty_eight">2028</option>
+						<option value="twenty_nine">2029</option>
 						<option value="thirty">2030</option>
-						<option value="thirtyone">2031</option>
-						<option value="thirtytwo">2032</option>
-						<option value="thirtythree">2033</option>
-						<option value="thirtyfour">2034</option>
+						<option value="thirty_one">2031</option>
+						<option value="thirty_two">2032</option>
+						<option value="thirty_three">2033</option>
+						<option value="thirty_four">2034</option>
 					</select>
 				</td>
 			</tr>
 			<tr>
 				<td colspan="4">
-					<label class="head">Tip</label>
+					<label class="head" for="tip">Tip</label>
 					<select id="tip">
-						<option value="eighteenpercent">18%</option>
-						<option value="twentypercent">20%</option>
-						<option value="twentytwopercent">22%</option>
+						<option value="eighteen_percent">18%</option>
+						<option value="twenty_percent">20%</option>
+						<option value="twenty_two_percent">22%</option>
 						<option value="custom">Custom</option>
 					</select>
 				</td>

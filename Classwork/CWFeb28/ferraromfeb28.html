@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,11 +10,11 @@
 	<h1>What can you add to a form?</h1>
 	<fieldset><legend>Personal Information</legend>
 	<form action="mailto:mf69836p@pace.edu?subject=my info" method="post">
-		<label>First Name  </label><input type="text" id="fname" name="fname"><br><br>
-		<label>Last Name  </label><input type="text" id="lname" name="lname"><br><br>
-		<label>email  </label><input type="text" id="email" name="email"><br><br>
+		<label for="fname">First Name  </label><input type="text" id="fname" name="fname"><br><br>
+		<label for="lname">Last Name  </label><input type="text" id="lname" name="lname"><br><br>
+		<label for="email">Email  </label><input type="text" id="email" name="email"><br><br>
 		<label>Month</label>
-		<select id="month" name="month">
+		<label for="month">Select</label><select id="month" name="month">
 			<option value="January">January</option>
 			<option value="February" selected>February</option>
 			<option value="March">March</option>
@@ -30,7 +30,7 @@
 		</select>
 		&nbsp;
 		<label>Day</label>
-		<select id="day" name="day">
+		<label for="day">Select</label><select id="day" name="day">
 			<option value="One">1</option>
 			<option value="Two">2</option>
 			<option value="Three">3</option>
@@ -60,19 +60,19 @@
 			<option value="Twenty_seven">27</option>
 			<option value="Twenty_eight" selected>28</option>
 			<option value="Twenty_nine">29</option>
-			<option value="Thrity_two">30</option>
-			<option value="Thrity_one">31</option>
+			<option value="Thirty_two">30</option>
+			<option value="Thirty_one">31</option>
 
 		</select>
 		&nbsp;
 		<label>Year</label>
-		<select id="year">
-			<option value="nintyfive">1995</option>
-			<option value="nintysix">1996</option>
-			<option value="nintyseven">1997</option>
-			<option value="nintyeight">1998</option>
-			<option value="nintynine">1999</option>
-			<option value="twothousand">2000</option>
+		<label for="year">Select</label><select id="year">
+			<option value="ninety_five">1995</option>
+			<option value="ninety_six">1996</option>
+			<option value="ninety_seven">1997</option>
+			<option value="ninety_eight">1998</option>
+			<option value="ninety_nine">1999</option>
+			<option value="two_thousand">2000</option>
 			<option value="zero_one">2001</option>
 			<option value="zero_two">2002</option>
 			<option value="zero_three">2003</option>
@@ -93,38 +93,42 @@
 			<option value="zero_eighteen">2018</option>
 			<option value="zero_nineteen">2019</option>
 			<option value="zero_twenty">2020</option>
-			<option value="zero_twentyone">2021</option>
-			<option value="zero_twentytwo" selected>2022</option>
-			<option value="zero_twentythree">2023</option>
-			<option value="zero_twentyfour">2024</option>
-			<option value="zero_twentyfive">2025</option>
-			<option value="zero_twentysix">2026</option>
-			<option value="zero_twentyseven">2027</option>
+			<option value="zero_twenty_one">2021</option>
+			<option value="zero_twenty_two" selected>2022</option>
+			<option value="zero_twenty_three">2023</option>
+			<option value="zero_twenty_four">2024</option>
+			<option value="zero_twenty_five">2025</option>
+			<option value="zero_twenty_six">2026</option>
+			<option value="zero_twenty_seven">2027</option>
 		</select>
 		<br><br>
 		<label>Pick a Major</label>
-		<select multiple size="2">
-			<optgroup>Siedenberg</optgroup>
-			<option value="comp_sci">Computer Science</option>
-			<option value="cit">Computer Information Technology</option>
-			<option value="is">Information Systems</option>
-			<option value="finance">Finance</option>
-		</select>
+		<label>
+			<select multiple size="2">
+				<optgroup label="Siedenberg">Siedenberg</optgroup>
+				<option value="comp_sci">Computer Science</option>
+				<option value="cit">Computer Information Technology</option>
+				<option value="is">Information Systems</option>
+				<option value="finance">Finance</option>
+			</select>
+		</label>
 		<br><br>
 		<label>Living Status: </label>
-		<label>Campus</label><input type="radio" name="housing" value="campus">&nbsp;
-		<label>Commuter</label><input type="radio" name="housing" value="commuter">&nbsp;
+		<label for="housing">Campus</label><input id="housing" type="radio" name="housing" value="campus">&nbsp;
+		<label for="commuter">Commuter</label><input id="commuter" type="radio" name="housing" value="commuter">&nbsp;
 		<br><br>
 		<label>How do you get to class?</label><br>
-		<label>Walking</label><input type="checkbox" name="walking">&nbsp;
-		<label>Bus</label><input type="checkbox" name="bus">&nbsp;
-		<label>Subway</label><input type="checkbox" name="subway">&nbsp;
-		<label>Train</label><input type="checkbox" name="train">&nbsp;
-		<label>Drive</label><input type="checkbox" name="drive">&nbsp;
-		<label>Ferry</label><input type="checkbox" name="ferry">&nbsp;
+		<label for="walking">Walking</label><input id="walking" type="checkbox" name="walking">&nbsp;
+		<label for="bus" >Bus</label><input id="bus" type="checkbox" name="bus">&nbsp;
+		<label for="subway">Subway</label><input id="subway" type="checkbox" name="subway">&nbsp;
+		<label for="train" >Train</label><input id="train" type="checkbox" name="train">&nbsp;
+		<label for="drive" >Drive</label><input id="drive" type="checkbox" name="drive">&nbsp;
+		<label for="ferry">Ferry</label><input id="ferry" type="checkbox" name="ferry">&nbsp;
 		<br><br>
 		<label>Please post questions and comments here</label><br>
-		<textarea rows="15" cols="55"></textarea>
+		<label>
+			<textarea rows="15" cols="55"></textarea>
+		</label>
 
 		<p>
 		<input type="submit" id="submitBtn" name="submitBtn" value="Press Me"> &nbsp;

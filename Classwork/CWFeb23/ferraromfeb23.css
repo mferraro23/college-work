@@ -7,19 +7,17 @@ img{
 }
 .biggerFont{
 	font-size: 20px;
-	font-family: Times New Roman;
+	font-family: Times New Roman, sans-serif;
 	font-weight: bold;
 }
 .comicSans{
-	font-family: comic sans ms;
+	font-family: comic sans ms, sans-serif;
 }
 .allBorders{
 	border: darkred 5px	inset;
 }
 .topBottomBorder{
-	border: paleturquoise;
-	border-width: 5px 5px;
-	border-style: inset;
+	border: 5px inset paleturquoise;
 	padding: 10px;
 }
 .allDiff{

@@ -1,63 +1,71 @@
-<html>
-	<head>
-		<title>What is your average grade?</title>
-		<style type="text/css">
-				
-		</style>
-	</head>
+<html lang="en">
+<head>
+	<title>What is your average grade?</title>
+	<link rel="stylesheet" type="text/css" href="troubleshoot.css">
+</head>
 <body>
-	<h2>my grades for the class</h2>
+<h2>My Grades For the Class</h2>
+
+<label for="input"></label>Enter your last grade: <input type="text" id="input">
+<button type="button" onClick="calcGrade()">Submit last grade</button>
+<p id="grades"></p>
 
 <script>
-
-function calcGrade()
-{
-	//generate a random grade between 50-100 here
-	var grade1 = parseInt(prompt("What grade did you receive",95));
-
-	//const value of 90 here
-	var grade2 = parseInt(prompt("What grade did you receive",95));
-
-	//input a manual grade from the user here
-	var grade3 = parseInt(prompt("What grade did you receive",95));
-
-	document.write("Your grades are "+ grade1+ ","+ grade2 + "," + grade3);
-
-	var gradeAvg = (grade1+grade2+grade3)/3;
-	document.write("Your average score is a " + gradeAvg + "<br>");
-	if (gradeAvg>=90)
-	{
-		document.write("Your grade is an A, congrats");
-		document.write("<img src=''>");
-	}
-	else if (gradeAvg>=80)
-	{
-		document.write("B grade, good work!");
-		document.write("<img src=''>");
-	}
-	else if (gradeAvg>=70)
-	{
-		document.write("Your grade is a C");
-		document.write("<img src=''>");
-	}
-	else if (gradeAvg>=60)
-	{
-		document.write("You barely passed with a D");
-		document.write("<img src=''>");
-	}
-	else if (gradeAvg<60)
-	{
-		document.write("Sorry you failed the class");
-		document.write("<img src=''>");
-	}
-	else
-	{
-		document.write("Wrong values, please try again");
-	}
+	const grade1 = Math.floor(Math.random() * (50) + 50);
+	const grade2 = 90;
+	let grade3;
+	let newGrade3;
+	let gradeAvg;
+	document.getElementById("grades").innerHTML = "Your grades are " + grade1 + ", and " + grade2 + ". Waiting for the last grade input...";
 	
-}
 
-calcGrade();
+	function calcGrade() {
+		grade3 = document.querySelector('input').value;
+		newGrade3 = parseInt(grade3);
+		//console.log(grade3);
+		gradeAvg = Math.round((grade1 + grade2 + newGrade3) / 3);
+		document.getElementById("grades").innerHTML = "Your grades are " + grade1 + ", " + grade2 + " and " + grade3 + "<br>Your average score is a " + gradeAvg + "%<br>";
+
+		function gradeA() {
+			document.getElementById("grades").innerHTML += "Your grade is an A, congrats!<br><img src= 'https://haveuheard.com/wp-content/uploads/a-plus-huh.jpg' alt='imgA'>";
+		}
+
+		function gradeB() {
+			document.getElementById("grades").innerHTML += "B grade, good work!<br><img src='https://cdn4.vectorstock.com/i/1000x1000/05/78/grade-b-plus-result-icon-school-red-mark-vector-24430578.jpg' alt='B'>";
+		}
+
+		function gradeC() {
+			document.getElementById("grades").innerHTML += "Your grade is a C<br><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAmnJogHSfJ3RirNpDlxdmFHsaYJ1gjfV6oQ&usqp=CAU' alt='imgC'>";
+		}
+
+		function gradeD() {
+			document.getElementById("grades").innerHTML += "You barely passed with a D<br><img src='https://www.pngkit.com/png/detail/143-1435748_qb-d-grade-d-grade-png.png' alt='imgD'";
+		}
+
+		function gradeF() {
+			document.getElementById("grades").innerHTML += "Sorry you failed the class<br><img src='https://us.123rf.com/450wm/chereliss/chereliss1710/chereliss171000011/87525257-fail-grade-result-f-hand-drawn-vector-grade-with-minus-in-circle-flat-illustration.jpg?ver=6' alt='imgF'>";
+		}
+
+		function wrongValues() {
+			document.getElementById("grades").innerHTML += "Wrong values, please try again";
+		}
+
+		if (gradeAvg >= 90) {
+			gradeA();
+		} else if (gradeAvg >= 80) {
+			gradeB();
+		} else if (gradeAvg >= 70) {
+			gradeC();
+		} else if (gradeAvg >= 60) {
+			gradeD();
+		} else if (gradeAvg < 60) {
+			gradeF();
+		} else {
+			wrongValues();
+		}
+
+	}
+
 
 </script>
 </body>

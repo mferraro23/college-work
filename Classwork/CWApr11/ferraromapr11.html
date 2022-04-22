@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,10 +8,12 @@
 </head>
 <body>
 	<script type="text/javascript">
+		let docMessage;
+
 		function dollarBreakup(bills){
-			var totalTens = 0;
-			var totalFives = 0;
-			var totalOnes = 0;
+			let totalTens = 0;
+			let totalFives = 0;
+			let totalOnes = 0;
 			while (bills > 0){
 
 				if (bills >= 10){
@@ -34,13 +36,17 @@
 			docMessage += "<br>I get back $" + diff + " in bills.";
 			dollarBreakup(diff);
 		}
-		function myChange(cost){
-			var pocketChange = Math.floor(Math.random()*20 + 1);
+		const item = prompt("What item you want to buy?");
+
+		const itemCost = parseFloat(prompt("How much does your " + item + " cost?",'4.50'));
+
+		function myChange(){
+			const pocketChange = Math.floor(Math.random() * 20 + 1);
 			docMessage += "<br>I had $" + pocketChange + " in my pocket.";
-			var dif = pocketChange-itemCost;
+			const dif = pocketChange - itemCost;
 			change(dif);
 			if (pocketChange>=itemCost){
-			docMessage += "<br>Now i have $" + (pocketChange-itemCost).toFixed(2) + " left in my wallet."
+			docMessage += "<br>Now I have $" + (pocketChange-itemCost).toFixed(2) + " left in my wallet."
 			
 			}
 			else if (pocketChange<itemCost){
@@ -49,11 +55,10 @@
 			else{
 				docMessage += "You dont get any change back.";
 			}
-		}		
-		var item = prompt("What item you want to buy?");
-		var itemCost = parseFloat(prompt("How much does your " + item + " cost?",4.50));
-		var docMessage = "You purchased " + item + " for a price of $" + itemCost.toFixed(2) + ".";
-		myChange(itemCost);
+		}
+
+		docMessage = "You purchased " + item + " for a price of $" + itemCost.toFixed(2) + ".";
+		myChange();
 
 		
 		

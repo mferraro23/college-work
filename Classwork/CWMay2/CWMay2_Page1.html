@@ -1,0 +1,153 @@
+<html lang="en">
+<head><title>Traveling</title>
+    <style>
+        body{
+            background-color: #46D990;
+            color: blue;
+            font-size: 20pt;
+        }
+        span{
+            margin-left: 30px;
+            color: red;
+        }
+        .black
+        {
+            color: black;
+        }
+        .blue{
+            color: dodgerblue;
+        }
+    </style>
+</head>
+<body>
+<h2>Which way should I travel</h2>
+
+<script type="text/javascript">
+    let message = "";
+    function daysVac(lenStay){
+        let vacDay = lenStay
+        // -------------------------------------------------------
+        // If/If-else/else statement depending on the # of days for vacation
+        // -------------------------------------------------------
+        if (vacDay < 4) {
+            message+="Short trip.";
+        }
+        else if (vacDay > 7) {
+            message+="Long trip. Bring extra bags.";
+        }
+        else {
+            message+="";
+        }
+        message+="<br>------------------------------------------------------------------------------------";
+    }
+
+    function busyAirports(fromAir)
+    {
+        //switch statement for allowing extra time is specific airports, pick 5 busy airports
+        switch (fromAir)
+        {
+            case "LAX":
+            case "JFK":
+            case "LGA":
+            case "MIA":
+            case "ATL":
+                message+="<br>Make sure you allow extra time, "+ fromAir+" the airport is very busy and crowded!";
+                break;
+        }
+    }
+
+    function airportHyperLinks(airportName)
+    {
+        //finish all the case statements the airports links to be included in the sentence
+        switch (airportName)
+        {
+            case "JFK":
+                airportName = ("<a href='https://www.jfkairport.com'>JFK</a>");
+                break;
+            case "LGA":
+                airportName = ("<a href='https://www.laguardiaairport.com/'>LGA</a>");
+                break;
+            case "LAX":
+                airportName = ("<a href='https://www.flylax.com'>LAX</a>");
+                break;
+            case "DFW":
+                airportName = ("<a href='https://www.dfwairport.com'>DFW</a>");
+                break;
+            case "ORY":
+                airportName = ("<a href='https://www.airport-orly.com'>ORY</a>");
+                break;
+            case "EWR":
+                airportName = ("<a href='https://www.newarkairport.com/'>EWR</a>");
+                break;
+            case "MIA":
+                airportName = ("<a href='https://www.miami-airport.com/'>MIA</a>");
+                break;
+            case "MDW":
+                airportName = ("<a href='https://www.flychicago.com/midway/home/pages/default.aspx'>MDW</a>");
+                break;
+            case "DCA":
+                airportName = ("<a href='https://www.flyreagan.com/'>DCA</a>");
+                break;
+            case "ATL":
+                airportName = ("<a href='https://www.atl.com/'>ATL</a>");
+                break;
+            case "LHR":
+                airportName = ("<a href='https://www.heathrow.com/'>LHR</a>");
+                break;
+            case "CDG":
+                airportName = ("<a href='https://www.parisaeroport.fr/en/charles-de-gaulle-airport'>CDG</a>");
+                break;
+            case "PEK":
+                airportName = ("<a href='https://www.beijing-airport.com/'>PEK</a>");
+                break;
+            case "SFO":
+                airportName = ("<a href='https://www.flysfo.com/'>SFO</a>");
+                break;
+            case "SEA":
+                airportName = ("<a href='https://www.portseattle.org/sea-tac'>SEA</a>");
+                break;
+            case "MAD":
+                airportName = ("<a href='https://www.aeropuertomadrid-barajas.com/eng/home.html'>MAD</a>");
+                break;
+            case "IST":
+                airportName = ("<a href='https://www.istairport.com/en'>IST</a>");
+                break;
+        }
+
+        return airportName;
+    }
+
+    function airportDestinations()
+    {
+        //create 2 random numbers to pick the destinations flying from and to.
+        let airportLoc = ["LGA","JFK","EWR","LAX","MIA","ORY","MDW","DCA","ATL","LHR","CDG","DFW","PEK","SFO","SEA","MAD","IST"];
+        let ranLoc1 = airportLoc[Math.floor(Math.random()*airportLoc.length)];
+        let ranLoc2 = airportLoc[Math.floor(Math.random()*airportLoc.length)];
+
+        if (ranLoc1 === ranLoc2){
+            message+="<br>You cannot fly to the same place! Refresh to try again!";
+            // airportDestinations();
+        }
+        else {
+            message+="<span class='black'>I am going to fly to: <span>";
+            while (ranLoc1 !== ranLoc2) {
+                const lenStay = Math.floor(Math.random() * 22 + 1);
+
+                //obtain two new locations
+                ranLoc1 = Math.floor(Math.random() * airportLoc.length);
+                ranLoc2 = Math.floor(Math.random() * airportLoc.length);
+
+                message+="<br><div class='blue'>Woo hoo, traveling from " + airportHyperLinks(airportLoc[ranLoc1]) + " to " + airportHyperLinks(airportLoc[ranLoc2]) +
+                    " and staying for " + lenStay + " days</div>";
+
+                busyAirports(airportLoc[ranLoc1], airportLoc[ranLoc2]);
+                //pass in the number of days into the daysVac function
+                daysVac(lenStay);
+            }
+        }
+    }
+    airportDestinations();
+    document.write(message);
+</script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <title>Paint Job Estimator</title>
+    <link type="text/css" href="style.css">
+
+
+    <script type="text/javascript">
+        /*A painting company has determined that for every 112 square feet of wall space = 1 gallon of paint = 8 hours of labor. The company charges $50 per hour for labor. Have the program ask the user to enter the square feet of wall space (with a decimal) and generate a random number between 10-50 for the price of a gallon of paint.
+        Tax rate for everything at the end is 5%. Assume no other extra fees
+        What needs to be included in the code:
+        -Number of gallons of pain required
+        -Hours of labor required
+        -Cost of paint
+        -Labor charges
+        -Total cost and total cost with taxes added
+        -$5000.00 is the threshold is the job will be completed or not. Last line should be an indicator if the job will be performed or not.
+        */
+
+
+        function paintCost(squareArea)
+        {
+
+            //round up to 1 more gallon of paint if anything over .0 of wall space needed
+            const areaWallSpaceR = Math.ceil(squareArea);
+
+            document.write("<bill need " + areaWallSpaceR.toFixed(1) + " of gallons of paint>");
+
+
+            document.write("<br>The cost pnt is $" + gallonCost.toFixed(2))
+
+            allPaintCost = areaWallSpaceR * gallonCost
+            document.write("<br>It will cost $" + allPainpost.toFixed(2) + " to purchase all "+ areaWceR.toFixed(2)+" gallons of paint required.")
+
+            return allPaintCost;
+        }
+
+        function labor55Charges(squareArea)
+        {
+            const laborRate = 50;
+            hoursReq = (squareArea*8)
+            totalLaborCharges = (laborRate * squareArea * 8);
+            document.write("<br>The number of hours for this job is" + hoursReq.toFixed(1));
+            document.write("<br>T
+
+            return totalLaborCharges;
+
+        }
+
+    </script>
+</head>
+<body>
+<h1>To paint or not to paint</h1>
+
+<script type="text/javascript">
+    var areaSize = parseFloat(("What is the square area of footage required to paint?";"500"));
+
+    var totalCost = 0;
+    var taxRate = 0.05;
+    var areaWallSpace = areaSize/112;
+    totalCost = paintCost() + totalCost;
+    document.write("<br>The total cost so far after the paint is $" + totalCost.toFixed(2));
+    documentte("<br>The final bill is $" + (totalCost+(totalCost*taxRate)).toFixed(2));
+    totalCost =  totalCost;
+    document.write("<<<br>The total cost so far after labor is $" + totalCost.toFixed(2));
+
+    document.wwwrite("<br>The tax rate for all the expenses are $" + (totalCost*taxRate).toFixed(2));
+
+
+
+    if ((totalCost+(totalCost*taxRate))>2000)
+        ntract</div>");
+
+
+
+
+    </body>
+    </html>

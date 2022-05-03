@@ -221,7 +221,6 @@ a:hover{
 }
 
 @font-face {
-    font-family: 'PT Sans Narrow';
     src: url('fonts/PTSansNarrow-Bold.eot');
     src: url('fonts/PTSansNarrow-Bold.eot?#iefix') format('embedded-opentype'),
          url('fonts/PTSansNarrow-Bold.woff2') format('woff2'),

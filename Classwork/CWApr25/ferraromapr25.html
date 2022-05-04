@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grades for the class</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>How did the class do?</h1>
+<script>
+    function classGrades(){
+        let message = "<table><tr><td>&nbsp;</td>";
+        let totalScore = 0;
+        const myStudents = ["Julia", "Zhenya", "Noah", "Nick", "Dana", "Ashley", "Hugo", "Melvin", "Raphael", "Joseph", "Briana", "Michael"];
+        for (let i=1; i<myStudents.length-1;i++){
+            message+="<td>Item " + i + "</td>";
+        }
+        message+="<td>Numeric Score</td><td>Letter Grade</td></tr>";
+        for (let i=0; i<myStudents.length;i++){
+            let item1 = Math.floor(Math.random()*50 + 50);
+            let nItem1 = item1;
+            if (item1<60){
+                item1 = "<a class = 'fail'>" + item1 + "</a>"
+            }
+            let item2 = Math.floor(Math.random()*50 + 50);
+            let nItem2 = item2;
+            if (item2<60){
+                item2 = "<a class = 'fail'>" + item2 + "</a>"
+            }
+            let item3 = Math.floor(Math.random()*50 + 50);
+            let nItem3 = item3;
+            if (item3<60){
+                item3 = "<a class = 'fail'>" + item3 + "</a>"
+            }
+            let item4 = Math.floor(Math.random()*50 + 50);
+            let nItem4 = item4;
+            if (item4<60){
+                item4 = "<a class = 'fail'>" + item4 + "</a>"
+            }
+            let item5 = Math.floor(Math.random()*50 + 50);
+            let nItem5 = item5;
+            if (item5<60){
+                item5 = "<a class = 'fail'>" + item5 + "</a>"
+            }
+            let item6 = Math.floor(Math.random()*50 + 50);
+            let nItem6 = item6;
+            if (item6<60){
+                item6 = "<a class = 'fail'>" +item6 + "</a>"
+            }
+            let item7 = Math.floor(Math.random()*50 + 50);
+            let nItem7 = item7;
+            if (item7<60){
+                item7 = "<a class = 'fail'>" + item7 + "</a>"
+            }
+            let item8 = Math.floor(Math.random()*50 + 50);
+            let nItem8 = item8;
+            if (item8<60){
+                item8 = "<a class = 'fail'>" + item8 + "</a>"
+            }
+            let item9 = Math.floor(Math.random()*50 + 50);
+            let nItem9 = item9;
+            if (item9<60){
+                item9 = "<a class = 'fail'>" + item9 + "</a>"
+            }
+            let item10 = Math.floor(Math.random()*50 + 50);
+            let nItem10 = item10;
+            if (item10<60){
+                item10 = "<a class = 'fail'>" + item10 + "</a>"
+            }
+            let numScore = (nItem1+nItem2+nItem3+nItem4+nItem5+nItem6+nItem7+nItem8+nItem9+nItem10)/10;
+            let properGrade;
+
+            if(numScore>=90 && numScore<100){
+                properGrade = "A"
+            }
+            else if(numScore>=80 && numScore<90){
+                properGrade = "B";
+            }
+            else if(numScore>=70 && numScore<80){
+                properGrade = "C";
+            }
+            else if(numScore>=60 && numScore<70){
+                properGrade = "D";
+            }
+            else if(numScore>=0 && numScore<60){
+                properGrade = "F";
+            }
+            message+="<tr><td>" + myStudents[i] + "</td><td>" + item1 + "</td><td>" + item2 + "</td><td>" + item3 +
+                "</td><td>" + item4 + "</td><td>" + item5 + "</td><td>" + item6 + "</td><td>" + item7 + "</td><td>" +
+                item8 + "</td><td>" + item9 + "</td><td>" + item10 + "</td><td>AVG: " + numScore + "</td><td>" +
+                properGrade + "</td></tr>";
+
+            totalScore+=numScore;
+        }
+        let classAverage = ((totalScore)/12).toFixed(2);
+        document.write(message + "<tr><td colspan='11'>Class Average:</td><td colspan='2'>" + classAverage+ "</td></tr></table>");
+    }
+    classGrades();
+</script>
+</body>
+</html>

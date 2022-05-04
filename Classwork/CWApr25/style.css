@@ -1,0 +1,18 @@
+body{
+    background-color: #0B0B45;
+}
+h1{
+    color: #EF4765;
+}
+table,tr,td{
+    font-size: 12pt;
+    font-weight: bold;
+    background-color: #3db9b1;
+    border-radius: 1px;
+    border: inset #363945;
+}
+.fail{
+    color: crimson;
+    font-weight: bold;
+    font-size: 18pt;
+}

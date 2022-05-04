@@ -45,9 +45,9 @@
 	<!-- Home tab -->
 	<div class="container" id="home">
 		<hr>
-		<div><p><table><tr><td>&nbsp;</td></tr></table></div>
+		<div style="text-align: right"><h5 id="userName"></h5></div>
+
 		<table>
-			<h1 id="userName"></h1>
 			<th colspan="2"><h2>AMD vs Intel: Who Makes the Better CPU?</h2></th>
 			<tr>
 				<td colspan="3">
@@ -73,7 +73,7 @@
 			</tr>
 			<tr>
 				<td>
-					<div class = movePic>
+					<div class="movePic">
 						<img class="mid_pics" src="./images/amd_chip.png" alt="amd_chip">
 					</div>
 				</td>
@@ -351,6 +351,8 @@
 		</div>
 	</div>
 	<script type="text/javascript">
+		let userName = prompt("Hello, what is your name?");
+		document.querySelector('#userName').innerHTML = "Welcome " + userName + ".";
 		// spin wheel to get lucky number of cores
 		async function lucky(){
 			let cores = ['4', '6', '8', '16', '24', '32','48', '64'];

@@ -6,9 +6,11 @@
     <link type="text/css" rel="stylesheet" href="style.css">
 </head>
 <body>
+<h1>How did the class do?</h1>
 <script>
     function classGrades(){
-        let message = "<table border='1'><tr><td>&nbsp;</td>";
+        let message = "<table><tr><td>&nbsp;</td>";
+        let totalScore = 0;
         const myStudents = ["Julia", "Zhenya", "Noah", "Nick", "Dana", "Ashley", "Hugo", "Melvin", "Raphael", "Joseph", "Briana", "Michael"];
         for (let i=1; i<myStudents.length-1;i++){
             message+="<td>Item " + i + "</td>";
@@ -84,8 +86,11 @@
                 properGrade = "F";
             }
             message+="<tr><td>" + myStudents[i] + "</td><td>" + item1 + "</td><td>" + item2 + "</td><td>" + item3 + "</td><td>" + item4 + "</td><td>" + item5 + "</td><td>" + item6 + "</td><td>" + item7 + "</td><td>" + item8 + "</td><td>" + item9 + "</td><td>" + item10 + "</td><td>AVG: " + numScore + "</td><td>" + properGrade + "</td></tr>";
+
+            totalScore+=numScore;
         }
-        document.write(message + "</table>");
+        let classAverage = ((totalScore)/12).toFixed(2);
+        document.write(message + "<tr><td colspan='11'>Class Average:</td><td>" + classAverage+ "</td></tr></table>");
     }
     classGrades();
 </script>

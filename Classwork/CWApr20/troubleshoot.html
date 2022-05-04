@@ -1,7 +1,7 @@
 <html lang="en">
 <head>
     <title>Paint Job Estimator</title>
-    <link type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 
 
     <script type="text/javascript">
@@ -23,12 +23,11 @@
 
         function paintCost(squareArea)
         {
-
             //round up to 1 more gallon of paint if anything over .0 of wall space needed
             const areaWallSpaceR = Math.ceil(squareArea);
             const gallonCost = Math.floor(Math.random()*50 + 10);
 
-            document.write("<br> I will need " + areaWallSpaceR.toFixed(1) + " of gallons of paint>");
+            document.write("<br> I will need " + areaWallSpaceR.toFixed(1) + " of gallons of paint.");
             document.write("<br>The cost per gallon of paint is $" + gallonCost.toFixed(2));
 
             const allPaintCost = areaWallSpaceR * gallonCost;
@@ -41,10 +40,10 @@
         function labor55Charges(squareArea)
         {
             const laborRate = 50;
-            hoursReq = (squareArea*8)
-            totalLaborCharges = (laborRate * squareArea * 8);
-            document.write("<br>The number of hours for this job is" + hoursReq.toFixed(1));
-            document.write("<br>T
+            let hoursReq = (squareArea*8)
+            let totalLaborCharges = (laborRate * squareArea * 8);
+            document.write("<br>The number of hours for this job is " + hoursReq.toFixed(1));
+            document.write("<br>The labor rate for this job is $" + (hoursReq*laborRate).toFixed(2));
 
             return totalLaborCharges;
 
@@ -58,7 +57,7 @@
     <script type="text/javascript">
         const areaSize = parseFloat(prompt("What is the square area of footage required to paint?", "500"));
 
-        let totalCost = 0;
+        let totalCost;
         const taxRate = 0.05;
         const areaWallSpace = areaSize / 112;
         totalCost = paintCost(areaWallSpace);
@@ -67,12 +66,12 @@
         document.write("<br>The total cost so far after labor is $" + totalCost.toFixed(2));
         document.write("<br>The tax rate for all the expenses are $" + (totalCost*taxRate).toFixed(2));
         document.write("<br>The final bill is $" + (totalCost+(totalCost*taxRate)).toFixed(2));
-        
+
         if ((totalCost+(totalCost*taxRate))>5000){
-            document.write("I think this is too much money!");
+            document.write("<br><div class='red'>I think this is too much money!</div>");
         }
         else{
-            document.write("Where do I sign the contract?");
+            document.write("<br><div class='red'>Where do I sign the contract?</div>");
         }
     </script>
 </body>

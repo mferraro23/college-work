@@ -30,10 +30,10 @@
 
             document.write("<br> I will need " + areaWallSpaceR.toFixed(1) + " of gallons of paint>");
             document.write("<br>The cost per gallon of paint is $" + gallonCost.toFixed(2));
-            
+
             const allPaintCost = areaWallSpaceR * gallonCost;
 
-            document.write("<br>It will cost $" + allPainpost.toFixed(2) + " to purchase all "+ areaWceR.toFixed(2)+" gallons of paint required.")
+            document.write("<br>It will cost $" + allPaintCost.toFixed(2) + " to purchase all "+ areaWallSpaceR.toFixed(2)+" gallons of paint required.");
 
             return allPaintCost;
         }
@@ -53,29 +53,30 @@
     </script>
 </head>
 <body>
-<h1>To paint or not to paint</h1>
+    <h1>To paint or not to paint</h1>
 
-<script type="text/javascript">
-    const areaSize = parseFloat(prompt("What is the square area of footage required to paint?", "500"));
+    <script type="text/javascript">
+        const areaSize = parseFloat(prompt("What is the square area of footage required to paint?", "500"));
 
-    let totalCost = 0;
-    const taxRate = 0.05;
-    const areaWallSpace = areaSize / 112;
-    totalCost = paintCost() ;
-    document.write("<br>The total cost so far after the paint is $" + totalCost.toFixed(2));
-    document.write("<br>The final bill is $" + (totalCost+(totalCost*taxRate)).toFixed(2));
-    totalCost =  totalCost;
-    document.write("<<<br>The total cost so far after labor is $" + totalCost.toFixed(2));
-
-    document.write("<br>The tax rate for all the expenses are $" + (totalCost*taxRate).toFixed(2));
-
-
-
-    if ((totalCost+(totalCost*taxRate))>2000)
-        ntract</div>");
+        let totalCost = 0;
+        const taxRate = 0.05;
+        const areaWallSpace = areaSize / 112;
+        totalCost = paintCost(areaWallSpace);
+        document.write("<br>The total cost so far after the paint is $" + totalCost.toFixed(2));
+        totalCost += labor55Charges(areaWallSpace);
+        document.write("<br>The total cost so far after labor is $" + totalCost.toFixed(2));
+        document.write("<br>The tax rate for all the expenses are $" + (totalCost*taxRate).toFixed(2));
+        document.write("<br>The final bill is $" + (totalCost+(totalCost*taxRate)).toFixed(2));
 
 
 
 
-    </body>
-    </html>
+        if ((totalCost+(totalCost*taxRate))>5000){
+            document.write("I think this is too much money!");
+        }
+        else{
+            document.write("Where do I sign the contract?");
+        }
+    </script>
+</body>
+</html>

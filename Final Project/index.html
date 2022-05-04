@@ -308,20 +308,24 @@
 					<h2>Buy</h2>
 					<!--Questions-->
 					<div style="text-align: center;">
-						<label class="biggerFont" for='input' >Which one do you want to buy?</label>
-						<input type='text' id='input'>
-						<button type='button' onclick='getInfo()'>Learn More!</button>
-						<br>
-						<br><label class="smallerFont" for='chip'>Enter the price of the chip you want: </label><input type='text' id='chip'>
-						<br>
-						<br><label class="smallerFont" for='amount'>How much money do you have? </label><input type='text' id='amount'>
-						<br>
-						<br><label class="smallerFont" for='pay'>How much is your weekly pay? </label><input type='text' id='pay'>
+						<form action="mailto:mf69836p@pace.edu?subject=my info" method="post">
+							<label class="biggerFont" for='input' >Which one do you want to buy?</label>
+							<input type='text' id='input'>
+							<button type='button' onclick='getInfo()'>Learn More!</button>
+							<br>
+							<br><label class="smallerFont" for='chip'>Enter the price of the chip you want: </label><input type='text' id='chip'>
+							<br>
+							<br><label class="smallerFont" for='amount'>How much money do you have? </label><input type='text' id='amount'>
+							<br>
+							<br><label class="smallerFont" for='pay'>How much is your weekly pay? </label><input type='text' id='pay'>
 
-						<button type='button' onclick='buy()'>Buy!</button>
-						<!--Document to write to-->
-						<p class = "new" id="insert"></p>
-						<p class = "newer" id="inserted"></p>
+							<button type='button' onclick='buy()'>Buy!</button>
+
+							<br><input type='submit' name="submit" value="Email a Copy of this form to me!" class="submit" >
+
+							<p class = "new" id="insert"></p>
+							<p class = "newer" id="inserted"></p>
+						</form>
 					</div>
 					<hr>
 				</div>

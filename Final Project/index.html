@@ -308,23 +308,24 @@
 					<h2>Buy</h2>
 					<!--Questions-->
 					<div style="text-align: center;">
-						<form action="mailto:mf69836p@pace.edu?subject=my info" method="post">
+						<form action="mailto:mferraro2304@gmail.com?subject=My Info" method="post" enctype="text/plain">
 							<label class="biggerFont" for='input' >Which one do you want to buy?</label>
 							<input type='text' id='input'>
 							<button type='button' onclick='getInfo()'>Learn More!</button>
 							<br>
-							<br><label class="smallerFont" for='chip'>Enter the price of the chip you want: </label><input type='text' id='chip'>
+							<br><label class="smallerFont" for='chip'>Enter the price of the chip you want: </label><input type='text' id='chip' name="chip">
 							<br>
-							<br><label class="smallerFont" for='amount'>How much money do you have? </label><input type='text' id='amount'>
+							<br><label class="smallerFont" for='amount'>How much money do you have? </label><input type='text' id='amount' name="amount">
 							<br>
-							<br><label class="smallerFont" for='pay'>How much is your weekly pay? </label><input type='text' id='pay'>
+							<br><label class="smallerFont" for='pay'>How much is your weekly pay? </label><input type='text' id='pay' name="pay">
 
 							<button type='button' onclick='buy()'>Buy!</button>
 
-							<br><input type='submit' name="submit" value="Email a Copy of this form to me!" class="submit" >
-
 							<p class = "new" id="insert"></p>
 							<p class = "newer" id="inserted"></p>
+
+							<br><input type='submit' value="Send Email!" class="submit">
+							<input type="reset" name="reset" value="Clear Form" class="submit">
 						</form>
 					</div>
 					<hr>
@@ -432,7 +433,7 @@
 
 		// if user can buy the product take them to correct store page.
 		function canBuy(){
-			document.querySelector('#insert').innerHTML = "<label for='cpu_make'><br>You can buy a cpu, what cpu are you looking for? </label><br><input id='cpu_make' type='text'>&nbsp;<button type='button' onclick='cpuMake()'>GO!</button>";
+			document.querySelector('#insert').innerHTML = "<label for='cpu_make'><br>You can buy a cpu, what cpu are you looking for? </label><br><input id='cpu_make' type='text' name='insert'>&nbsp;<button type='button' onclick='cpuMake()'>GO!</button>";
 		}
 
 		// figure out if user can buy product

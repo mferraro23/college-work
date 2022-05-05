@@ -5,6 +5,11 @@ body{
      background-color: #231B40;
      height: auto;
 }
+h1{
+     font-family: 'PT Sans Regular', sans-serif;
+     text-align: center;
+     color: #3c67dc;
+}
 h2{
      text-align: center;
      color: #3c67dc;
@@ -94,7 +99,10 @@ label{
      font-family: 'PT Sans Regular', sans-serif;
      color: #BCB4D9;
 }
-
+.productList{
+     width: 450px;
+     height: 250px;
+}
 .biggerFont{
      font-size: 30px;
 }
@@ -207,6 +215,12 @@ label{
      background-color: #8091F2;
      position: -webkit-sticky;
      position: sticky;
+     top: 0;
+     border-radius: 10px;
+     height: 70px;
+}
+.header_amd{
+     background-color: #8091F2;
      top: 0;
      border-radius: 10px;
      height: 70px;

@@ -9,7 +9,10 @@
     let message = "";
     function getDate(){
         let date = new Date().toLocaleDateString();
-        let month = date.charAt(0);
+        const myArray = date.split("/");
+        let month = myArray[0];
+        let day = myArray[1];
+        
         switch (month) {
             case("1"):
                 month = "January";
@@ -51,7 +54,7 @@
         let temp = date.charAt(0)
         date = date.replace(temp, month);
         date = date.replaceAll("/", " ");
-        //document.write(date);
+        document.write(date);
     }
     function getTemp(date){
         let min = 40;

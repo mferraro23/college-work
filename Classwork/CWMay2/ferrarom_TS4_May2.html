@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let message = "";
+    function getDate(){
+        let date = new Date().toLocaleDateString();
+        let month = date.charAt(0);
+        switch (month) {
+            case("1"):
+                month = "January";
+                break;
+            case("2"):
+                month = "February"
+                break;
+            case("3"):
+                month = "March";
+                break;
+            case("4"):
+                month = "April"
+                break;
+            case("5"):
+                month = "May";
+                break;
+            case("6"):
+                month = "June"
+                break;
+            case("7"):
+                month = "July";
+                break;
+            case("8"):
+                month = "August"
+                break;
+            case("9"):
+                month = "September"
+                break;
+            case("10"):
+                month = "October"
+                break;
+            case("11"):
+                month = "November"
+                break;
+            case("12"):
+                month = "December"
+                break;
+        }
+        let temp = date.charAt(0)
+        date = date.replace(temp, month);
+        date = date.replaceAll("/", " ");
+        //document.write(date);
+    }
+    function getTemp(date){
+        let min = 40;
+        let max = 95;
+        let temp = Math.floor(Math.random() * (max-min + 1) + min);
+        generateTable(date,temp)
+    }
+    function generateTable(date,temp){
+        message += "<table><tr><td>Weather For the Next 10 Days</td></tr>";
+    }
+    getDate();
+</script>
+
+</body>
+</html>

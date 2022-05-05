@@ -32,9 +32,37 @@
         </tr>
     </table>
 </div>
+<div>
+    <div class="header_amd">
+        <h1>Do You Want To Add Any to Cart?</h1>
+    </div>
+    <div class="container">
+        <div style="text-align: center">
+            <label for="choice">Enter Item</label>
+                <select id="choice">
+                    <optgroup label="CPU'S">
+                        <option>AMD Ryzen 9 5950x</option>
+                        <option>AMD Ryzen 9 5900</option>
+                        <option>AMD Ryzen 5 5600</option>
+                    </optgroup>
+                    <optgroup label="Graphic Card's">
+                        <option>AMD Radeon™ RX 6900 XT Graphics</option>
+                        <option>AMD Radeon™ RX 6800 XT Graphics</option>
+                        <option>AMD Radeon™ RX 6800 Graphics</option>
+                    </optgroup>
+                </select>
+            <button type="button" onclick="getChoice()">Add To Cart</button>
+        </div>
+    </div>
+</div>
+
 <script>
-    let prodList = [];
-    let userChoice;
+    function getChoice(){
+        let prodList = ["AMD Ryzen 5 5600","AMD Ryzen 9 5900","AMD Ryzen 9 5950X","AMD Radeon™ RX 6900 XT Graphics","AMD Radeon™ RX 6800 XT Graphics","AMD Radeon™ RX 6800 Graphics"];
+
+        let userChoice;
+    }
+
 </script>
 
 

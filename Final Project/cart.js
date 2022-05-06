@@ -3,6 +3,8 @@ let cartList = [];
 function getCart(){
     let myCartPrice = newSum;
     let myCart = cartList;
+    console.log(myCartPrice);
+
 
 }
 function createCart(sum, infoList){

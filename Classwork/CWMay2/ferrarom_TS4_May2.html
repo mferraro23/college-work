@@ -103,9 +103,12 @@
         message += "<h1>" + date + "</h1><table border='1'><tr><td colspan='3'>Weather For the Next 10 Days</td></tr><tr><td>Day of the Week</td><td>Temperature</td><td>Forecast</td></tr>";
 
         while (i!==10){
+            let forecast = ["Sunny", "Cloudy", "Raining", "Windy", "Snowing"];
+            let fCast = Math.floor(Math.random()*5);
             let temp = Math.floor(Math.random() * (max-min + 1) + min);
             let weekDay = getWeekday(day, i);
-            message += "<tr><td>" + weekDay + "</td><td>" + temp+ "</td></tr>";
+            let cast = forecast[fCast];
+            message += "<tr><td>" + weekDay + "</td><td>" + temp+ "</td><td>" + cast + "</td></tr>";
             i++;
         }
         document.querySelector("#change").innerHTML = message;

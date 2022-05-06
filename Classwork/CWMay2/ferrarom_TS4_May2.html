@@ -77,15 +77,15 @@
         let temp = date.charAt(0)
         date = date.replace(temp, month);
         date = date.replaceAll("/", " ");
-        getTemp(date);
+        getTemp(date, weekDay);
     }
-    function getTemp(date){
+    function getTemp(date, weekday){
         let min = 40;
         let max = 95;
         let temp = Math.floor(Math.random() * (max-min + 1) + min);
-        generateTable(date,temp)
+        generateTable(date,temp, weekday);
     }
-    function generateTable(date,temp){
+    function generateTable(date,temp,weekDay){
         message += "<table><tr><td>Weather For the Next 10 Days</td></tr>";
     }
     getDate();

@@ -1,4 +1,13 @@
+let newSum = 0;
+let cartList = [];
+function getCart(){
+    let myCartPrice = newSum;
+    let myCart = cartList;
+
+}
 function createCart(sum, infoList){
-    let newSum = 0;
-    let cartList = [];
+    for (let i=0; i<infoList.length; i++){
+        cartList.push(infoList[i]);
+    }
+    newSum+=sum;
 }

@@ -431,12 +431,10 @@
 					window.open('intel.html', '_blank');
 					console.log('intel')
 				}
-
 			} else {
 				alert("Sorry i dont recognize " + info + ".");
 			}
 		}
-
 		// if user can buy the product take them to correct store page.
 		function canBuy(){
 			document.querySelector('#insert').innerHTML = "<label for='cpu_make'><br>You can buy a cpu, what cpu are you looking for? </label><br><input id='cpu_make' type='text' name='insert'>&nbsp;<button type='button' onclick='cpuMake()'>GO!</button>";

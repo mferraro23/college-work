@@ -65,6 +65,7 @@
     }
     function getWeekday(day, i) {
         let weekDay;
+        day += i;
         if (day===1||day===8||day===15||day===22||day===29){
             weekDay = "Monday";
         }
@@ -89,20 +90,21 @@
         else{
             alert("how does this date exist?????")
         }
-        return undefined;
+        return weekDay;
     }
     function generateTable(date, day){
         let min = 40;
         let max = 95;
         let i = 1;
-        message += "<table class='center'><tr><td>Weather For the Next 10 Days</td></tr>";
+        message += "<div class='center'><h1>" + date + "</h1><table class='center'><tr><td>Weather For the Next 10 Days</td></tr>";
 
         while (i!==10){
             let temp = Math.floor(Math.random() * (max-min + 1) + min);
-            let weekDay = getWeekday(i);
-            message += "<tr><td>" + weekDay + i + "</td><td>" + temp+ "</td></tr>";
+            let weekDay = getWeekday(day, i);
+            message += "<tr><td>" + weekDay + "</td><td>" + temp+ "</td></tr>";
             i++;
         }
+        message+="</div>";
         document.querySelector("#change").innerHTML = message;
     }
     getDate();

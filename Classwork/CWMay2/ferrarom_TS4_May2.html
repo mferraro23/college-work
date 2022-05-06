@@ -5,6 +5,7 @@
     <title>Title</title>
 </head>
 <body>
+<div id="change" class="center"></div>
 <script>
     let message = "";
     function getDate(){
@@ -89,11 +90,10 @@
         message += "<table><tr><td>Weather For the Next 10 Days</td></tr>";
         while (i!==10){
             let temp = Math.floor(Math.random() * (max-min + 1) + min);
-            message += "<tr><td>" + weekDay + i + "</td></tr>"
+            message += "<tr><td>" + weekDay + i + "</td><td>" + temp+ "</td></tr>";
             i++;
         }
-
-
+        document.querySelector("#change");
     }
     getDate();
 </script>

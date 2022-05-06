@@ -238,6 +238,15 @@ label{
      margin-left: auto;
      margin-right: auto;
 }
+.choicePadding{
+     font-family: 'PT Sans Regular', sans-serif;
+     padding-left: 350px;
+     padding-right: 350px;
+     color: white;
+     font-size: 15pt;
+     margin-left: auto;
+     margin-right: auto;
+}
 .move{
      margin-left: auto;
      margin-right: auto;

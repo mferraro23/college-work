@@ -15,17 +15,17 @@
             <td colspan="3"><hr></td>
         </tr>
         <tr>
-            <td><img src="" alt="i9-12900k" class="productList"><div style="text-align: center">Intel Core i9-12900K<br>16 Cores-3.2 GHz-125 Watts<br>From $ 609.99</div></td>
-            <td><img src="" alt="i9-12900KS" class="productList"><div style="text-align: center">Intel Core i9-12900KS<br>16 Cores-3.4 GHz-150 watts<br>From $ 779.98</div></td>
-            <td><img src="" alt="i9-12900KS" class="productList"><div style="text-align: center">Intel Core i9-12900KS<br>10 Cores-3.7 GHz-125 watts<br>From $ 277.98</div></td>
+            <td><img src="https://cdn.shopify.com/s/files/1/0474/7051/0229/products/BOX_I9_1.png?v=1636495940" alt="i9-12900k" class="productList1"><div style="text-align: center">Intel Core i9-12900K<br>16 Cores-3.2 GHz-125 Watts<br>From $ 609.99</div></td>
+            <td><img src="https://cdn.shopify.com/s/files/1/0474/7051/0229/products/BOX_I9_1.png?v=1636495940" alt="i9-12900KS" class="productList1"><div style="text-align: center">Intel Core i9-12900KS<br>16 Cores-3.4 GHz-150 watts<br>From $ 779.98</div></td>
+            <td><img src="https://cdn.shopify.com/s/files/1/0474/7051/0229/products/Box_T4_i7_Unlocked_12th_H93496_Ang02_Front_V01_1280x1280_e4da022f-97fa-4e46-b8a0-48f152cb57a5.png?v=1636497514" alt="i7-12700K" class="productList1"><div style="text-align: center">Intel Core i7-12700K<br>12 Cores-3.6 GHz-125 watts<br>From $ 449.99</div></td>
         </tr>
         <tr>
             <td colspan="3"><hr></td>
         </tr>
         <tr>
-            <td><img src="" alt="i9-11900K" class="productList"><div style="text-align: center">Intel Core i9-11900K<br>8 Cores-3.5 GHz-125 Watts<br>From $ 609.99</div></td>
-            <td><img src="" alt="i9-12900KF" class="productList"><div style="text-align: center">Intel Core i9-12900KF<br>16 Cores-3200 GHz-125 Watts<br>From $ 609.99</div></td>
-            <td><img src="" alt="RX 6800 Graphics" class="productList"><div style="text-align: center">AMD Radeon™ RX 6800 Graphics<br>16 Cores-3200 GHz-125 Watts<br>From $ 609.99</div></td>
+            <td><img src="https://media.flixfacts.com/inpage/intel-components/GamingBoxedCPU/i9-11900K/images/i9-ul.png" alt="i9-11900K" class="productList1"><div style="text-align: center">Intel Core i9-11900K<br>8 Cores-3.5 GHz-125 Watts<br>From $ 609.99</div></td>
+            <td><img src="https://cdn11.bigcommerce.com/s-3kliogr9m/images/stencil/1280x1280/products/387/1493/Box_T4_i9KF_Unlocked_11th_H93496_Ang03_Left_V01_1280x1280__33129.1636045764.png?c=1" alt="i9-12900KF" class="productList1"><div style="text-align: center">Intel Core i9-12900KF<br>16 Cores-3.2 GHz-125 Watts<br>From $ 549.99</div></td>
+            <td><img src="https://cdn.shopify.com/s/files/1/0474/7051/0229/products/Box_T4_i5_Unlocked_12th_H93496_Ang03_Left_V01_1280x1280_28d988fa-ebca-496e-b7bb-d8b691deac5e.png?v=1636500886" alt="i5-12600K" class="productList1"><div style="text-align: center">Intel Core i5-12600K<br>10 Cores-3/7 GHz-125 Watts<br>From $ 277.98</div></td>
         </tr>
         <tr>
             <td colspan="3"><hr></td>
@@ -42,12 +42,12 @@
             <select id="choice">
                 <option disabled="disabled" selected="selected">Select</option>
                 <optgroup label="CPU'S">
-                    <option>AMD Ryzen 9 5950X</option>
-                    <option>AMD Ryzen 9 5900</option>
-                    <option>AMD Ryzen 5 5600</option>
-                    <option>AMD Radeon™ RX 6900 XT Graphics</option>
-                    <option>AMD Radeon™ RX 6800 XT Graphics</option>
-                    <option>AMD Radeon™ RX 6800 Graphics</option>
+                    <option>Intel Core i9-12900K</option>
+                    <option>Intel Core i9-12900KS</option>
+                    <option>Intel Core i7-12700K</option>
+                    <option>Intel Core i9-11900K</option>
+                    <option>Intel Core i9-12900KF</option>
+                    <option>Intel Core i5-12600K</option>
                 </optgroup>
             </select>
             <button type="button" onclick="getChoice()">Add To Cart</button>
@@ -98,8 +98,8 @@
         document.querySelector("#cost").innerHTML = message1;
     }
     function getChoice(){
-        let prodList = ["AMD Ryzen 5 5600","AMD Ryzen 9 5900","AMD Ryzen 9 5950X","AMD Radeon™ RX 6900 XT Graphics","AMD Radeon™ RX 6800 XT Graphics","AMD Radeon™ RX 6800 Graphics"];
-        let priceList = ["209.99", "369.99", "549.00", "999.00", "649.00", "579.00"];
+        let prodList = ["Intel Core i9-12900K","Intel Core i9-12900KS","Intel Core i7-12700K","Intel Core i9-11900K","Intel Core i9-12900KF","Intel Core i5-12600K"];
+        let priceList = ["609.99", "779.98", "449.99", "609.99", "549.99", "277.98"];
         let userChoice = document.querySelector("#choice").value.toString();
 
 

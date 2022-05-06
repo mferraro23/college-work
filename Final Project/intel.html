@@ -84,7 +84,9 @@
     let message="<strong><u>List of Items In Cart:</u></strong><ul>";
     let message1="<strong><u>Cost of items:</u></strong>";
     document.querySelector("#list").innerHTML = "";
-
+    function createCart(){
+        window.open("cart.html");
+    }
     function makeCostList(infoList){
         let sum = 0;
         let newList = [];
@@ -101,9 +103,8 @@
         for (let i=0;i<newList.length;i++){
             sum += parseFloat(newList[i]);
         }
-        message1+="</ul><hr><u>Total Cost:</u> $" + sum;
+        message1+="</ul><hr><u>Total Cost:</u> $" + sum + "<br><button type='button' onclick='createCart(infoList)'>Calculate Cost</button>";
         document.querySelector("#cost").innerHTML = message1;
-        createCart(sum,infoList);
     }
     function getChoice(){
         let prodList = ["Intel Core i9-12900K","Intel Core i9-12900KS","Intel Core i7-12700K","Intel Core i9-11900K","Intel Core i9-12900KF","Intel Core i5-12600K"];

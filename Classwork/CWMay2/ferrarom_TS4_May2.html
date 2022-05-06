@@ -11,7 +11,13 @@
         let date = new Date().toLocaleDateString();
         const myArray = date.split("/");
         let month = myArray[0];
-        let day = myArray[1];
+        let day = parseInt(myArray[1]);
+        let weekDay;
+        if (day===1||day===8||day===15||day===22||day===29){
+            weekDay = "Monday";
+        }
+        else if (day===2||day===9||day===16)
+
 
         switch (month) {
             case("1"):
@@ -54,7 +60,7 @@
         let temp = date.charAt(0)
         date = date.replace(temp, month);
         date = date.replaceAll("/", " ");
-        document.write(date);
+        getTemp(date);
     }
     function getTemp(date){
         let min = 40;

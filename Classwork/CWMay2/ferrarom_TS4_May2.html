@@ -96,7 +96,7 @@
         let min = 40;
         let max = 95;
         let i = 1;
-        message += "<div class='center'><h1>" + date + "</h1><table class='center'><tr><td>Weather For the Next 10 Days</td></tr>";
+        message += "<h1>" + date + "</h1><table><tr><td>Weather For the Next 10 Days</td></tr>";
 
         while (i!==10){
             let temp = Math.floor(Math.random() * (max-min + 1) + min);
@@ -104,7 +104,6 @@
             message += "<tr><td>" + weekDay + "</td><td>" + temp+ "</td></tr>";
             i++;
         }
-        message+="</div>";
         document.querySelector("#change").innerHTML = message;
     }
     getDate();

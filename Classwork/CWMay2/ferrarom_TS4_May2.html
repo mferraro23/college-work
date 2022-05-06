@@ -63,40 +63,39 @@
         date = date.replaceAll("/", " ");
         generateTable(date, day);
     }
+    function getWeekday(day, i) {
+        let weekDay;
+        if (day===1||day===8||day===15||day===22||day===29){
+            weekDay = "Monday";
+        }
+        else if (day===2||day===9||day===16||day===23||day===30){
+            weekDay = "Tuesday";
+        }
+        else if (day===3||day===10||day===17||day===24||day===31){
+            weekDay = "Wednesday";
+        }
+        else if (day===4||day===11||day===18||day===25){
+            weekDay = "Thursday";
+        }
+        else if (day===5||day===12||day===19||day===26){
+            weekDay = "Friday";
+        }
+        else if (day===6||day===13||day===20||day===27){
+            weekDay = "Saturday";
+        }
+        else if (day===7||day===14||day===21||day===28){
+            weekDay = "Sunday";
+        }
+        else{
+            alert("how does this date exist?????")
+        }
+        return undefined;
+    }
     function generateTable(date, day){
         let min = 40;
         let max = 95;
         let i = 1;
         message += "<table class='center'><tr><td>Weather For the Next 10 Days</td></tr>";
-
-        function getWeekday(i) {
-            let weekDay;
-            if (day===1||day===8||day===15||day===22||day===29){
-                weekDay = "Monday";
-            }
-            else if (day===2||day===9||day===16||day===23||day===30){
-                weekDay = "Tuesday";
-            }
-            else if (day===3||day===10||day===17||day===24||day===31){
-                weekDay = "Wednesday";
-            }
-            else if (day===4||day===11||day===18||day===25){
-                weekDay = "Thursday";
-            }
-            else if (day===5||day===12||day===19||day===26){
-                weekDay = "Friday";
-            }
-            else if (day===6||day===13||day===20||day===27){
-                weekDay = "Saturday";
-            }
-            else if (day===7||day===14||day===21||day===28){
-                weekDay = "Sunday";
-            }
-            else{
-                alert("how does this date exist?????")
-            }
-            return undefined;
-        }
 
         while (i!==10){
             let temp = Math.floor(Math.random() * (max-min + 1) + min);

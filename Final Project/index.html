@@ -393,11 +393,11 @@
 			let target_path;
 			info = document.querySelector('#input').value.toLowerCase();
 			if (info==="amd" || info === "ryzen"){
-				target_path = "https://www.amd.com/en";
+				target_path = "amd.html";
 				console.log("amd");
 			}
 			else if (info === "intel"){
-				target_path = "https://www.intel.com/content/www/us/en/homepage.html";
+				target_path = "intel.html";
 				console.log("intel");
 			}
 			window.open(target_path, '_blank');
@@ -414,7 +414,7 @@
 					await sleep(1000);
 				} while (count !== 0)
 				if (count===0){
-					window.open('https://www.amd.com/en/direct-buy/us', '_blank');
+					window.open('amd.html', '_blank');
 					console.log('amd');
 				}
 			} else if (info === 'intel') {
@@ -425,7 +425,7 @@
 					await sleep(1000);
 				} while (count !== 0)
 				if (count === 0){
-					window.open('https://www.bestbuy.com/site/shop/intel-processors', '_blank');
+					window.open('intel.html', '_blank');
 					console.log('intel')
 				}
 

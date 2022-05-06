@@ -102,6 +102,7 @@
         }
         message1+="</ul><hr><u>Total Cost:</u> $" + sum;
         document.querySelector("#cost").innerHTML = message1;
+        createCart(sum,infoList);
     }
     function getChoice(){
         let prodList = ["Intel Core i9-12900K","Intel Core i9-12900KS","Intel Core i7-12700K","Intel Core i9-11900K","Intel Core i9-12900KF","Intel Core i5-12600K"];
